@@ -20,13 +20,26 @@
 
 }
 
+.quote {
+	font-size: 3rem;
+}
+
 
 
 @font-face{
-	font-family: name-font; 
-	src: url("../fonts/own-fonts/name-file-font.ext");
+	font-family: koch-antiqua-roman; 
+	src: url("../fonts/own-fonts/koch-antiqua-roman.ttf");
 }
 
-.name-font {
-	font-family: name-font;
+.koch-antiqua-roman {
+	font-family: koch-antiqua-roman;
+}
+
+@font-face{
+	font-family: rubik-regular; 
+	src: url("../fonts/own-fonts/Rubik-VariableFont_wght.ttf");
+}
+
+.rubik-regular {
+	font-family: rubik-regular;
 }

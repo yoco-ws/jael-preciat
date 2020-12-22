@@ -27,9 +27,29 @@
 	</head>
 	<body>
 
-		<?php require("views/navbar.view.php"); ?>
+		<div class="container-fluid">
+			<div class="row">
+				<main class="col-12 col-md-7 col-lg-5 mx-auto order-2 order-md-1">
+					<div class="row">
+						<h1 class="quote">
+							"Vale más administrar el Caos que forzar el Orden".
+						</h1>
+					</div>
+					<div class="row">
+						<div class="sign">
+							<img src="/img/jael-sign.svg" alt="Jael" class="col-3 col-md-2 ml-auto">
+						</div>
+					</div>
+					<div class="row"></div>
+					
+				</main>
+				<div class="col-12 col-md-5 order-1 order-md-2">
+					
+				</div>
+			</div>
+		</div>
 
-		<?php require("views/footer.view.php"); ?>	
+		
 		
 		<!-- jQuery first, then Tether, then Bootstrap JS. -->
 		<?php echo $jquery_js; ?>
