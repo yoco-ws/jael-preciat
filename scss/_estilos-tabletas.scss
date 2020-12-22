@@ -4,9 +4,50 @@
 
 	//Tamaños de fuentes
 
+	.text-card {
+		margin-top: 7.5rem;
+		margin-bottom: 7.5rem;
+	}
+
 	.quote {
 		font-size: 6rem;
 	}
+
+	.rich-text {
+		font-size: 2rem;
+	}
+
+	.sign {
+		margin-bottom: 15rem;
+	}
+
+	.shape {
+	    /*background-size: auto 105%;
+	    background-position-x: 101%;
+	    background-position-y: 94%;
+	    background-color: #d9e1e8;*/
+
+	    height: 60rem;
+		width: 90%;
+		margin-right: auto;
+	}
+
+	.shape-border {
+	    /*background-color: transparent;
+	    border: 2px solid $customize_brown;*/
+
+	    height: 60rem;
+		width: 85%;
+		margin-left: auto;
+
+		position: absolute;
+	    top: -3px;
+	    left: 5%;
+
+	}
+
+
+
 	
 	//Estílos particulares
 

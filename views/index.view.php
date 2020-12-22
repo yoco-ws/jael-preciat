@@ -29,22 +29,42 @@
 
 		<div class="container-fluid">
 			<div class="row">
-				<main class="col-12 col-md-7 col-lg-5 mx-auto order-2 order-md-1">
+				<main class="col-12 col-md-7 col-lg-5 mx-auto order-2 order-md-1 text-card">
 					<div class="row">
-						<h1 class="quote">
-							"Vale más administrar el Caos que forzar el Orden".
-						</h1>
-					</div>
-					<div class="row">
-						<div class="sign">
-							<img src="/img/jael-sign.svg" alt="Jael" class="col-3 col-md-2 ml-auto">
+						<div class="col-12">
+							<h1 class="quote">
+								"Vale más administrar el Caos que forzar el Orden".
+							</h1>
 						</div>
 					</div>
-					<div class="row"></div>
+					<div class="row">
+						<div class="sign col-4 col-md-3 ml-auto">
+							<img src="<?php echo RUTA ?>/img/jael-sign.svg" alt="Jael" class="img-fluid">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 rich-text">
+							Creadora del #BusinessCoffee <a href="https://elorderdelcaos.com" target="_blank"><u>El Orden del Caos</u></a>, líder de un equipo multidisciplinario, Master Business Coach con decenas de casos de éxito y dot-connector por vocación en @<a href="https://www.instagram.com/sumadetalentos/" target="_blank"><u>sumadetalentos</u></a>.
+						</div>
+					</div>
+					<div class="row">
+						<ul class="col-12 contatc-list-items">
+							<li>
+								<a href="https://api.whatsapp.com/send?phone=+529992690014" target="_blank">WhatsApp</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/jaelpreciat/" target="_blank">Instagram</a>
+							</li>
+							<li>
+								<a href="https://open.spotify.com/show/651AhFYaO4T2IBAqeXoxQC?si=MC26hzQLQB6NejGKcnwHQw" target="_blank">Spotify</a>
+							</li>
+						</ul>
+					</div>
 					
 				</main>
-				<div class="col-12 col-md-5 order-1 order-md-2">
-					
+				<div class="col-12 col-md-5 order-1 order-md-2 animation-container">
+					<div class="shape"></div>
+					<div class="shape-border"></div>
 				</div>
 			</div>
 		</div>

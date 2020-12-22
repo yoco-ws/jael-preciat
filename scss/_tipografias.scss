@@ -6,6 +6,11 @@
 	color: #fff!important;
 }
 
+//Colors
+
+$customize_brown: #894A40;
+$black: #000;
+
 //Tamaños de tipografías
 
 .title{
@@ -21,9 +26,24 @@
 }
 
 .quote {
-	font-size: 3rem;
+	font: 3rem koch-antiqua-roman;
+	color: $customize_brown;
 }
 
+.rich-text {
+	font: 1.5rem rubik-regular;
+	color: $black;
+
+	transition-duration: .5s;
+
+	* {
+		color: inherit;
+	}
+
+	a:hover, a:focus {
+		color: $customize_brown;
+	}
+}
 
 
 @font-face{
@@ -42,4 +62,13 @@
 
 .rubik-regular {
 	font-family: rubik-regular;
+}
+
+@font-face{
+	font-family: rubik-light; 
+	src: url("../fonts/own-fonts/Rubik-Light.ttf");
+}
+
+.rubik-light {
+	font-family: rubik-light;
 }
