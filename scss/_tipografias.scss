@@ -1,0 +1,32 @@
+.text-black {
+	color: #000!important;
+}
+
+.text-white   {
+	color: #fff!important;
+}
+
+//Tamaños de tipografías
+
+.title{
+
+}
+
+.paragraph{
+
+}
+
+.button{
+
+}
+
+
+
+@font-face{
+	font-family: name-font; 
+	src: url("../fonts/own-fonts/name-file-font.ext");
+}
+
+.name-font {
+	font-family: name-font;
+}
