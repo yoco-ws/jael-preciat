@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>Title site</title>
+		<title>Jael Preciat, Dot-Connetor</title>
 
 		<meta property="og:url"                content="<?php echo $URL; ?>" />
 		<meta property="og:type"               content="website" />
@@ -41,12 +41,12 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-12 rich-text">
+						<div class="col-12 rich-text fade-in">
 							Creadora del #BusinessCoffee <a href="https://elorderdelcaos.com" target="_blank"><u>El Orden del Caos</u></a>, líder de un equipo multidisciplinario, Master Business Coach con decenas de casos de éxito y dot-connector por vocación en @<a href="https://www.instagram.com/sumadetalentos/" target="_blank"><u>sumadetalentos</u></a>.
 						</div>
 					</div>
 					<div class="row">
-						<ul class="col-12 contatc-list-items">
+						<ul class="col-12 contatc-list-items fade-in">
 							<li>
 								<a href="https://api.whatsapp.com/send?phone=+529992690014" target="_blank">WhatsApp</a>
 							</li>
