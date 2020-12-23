@@ -30,23 +30,23 @@
 				<main class="col-12 col-md-7 col-lg-5 mx-auto order-2 order-md-1 text-card">
 					<div class="row">
 						<div class="col-12">
-							<h1 class="quote">
+							<h1 class="quote fade-in-up animated animatedFadeInUp">
 								"Vale más administrar el Caos que forzar el Orden".
 							</h1>
 						</div>
 					</div>
 					<div class="row">
-						<div class="sign col-4 col-md-3 ml-auto">
+						<div class="sign col-4 col-md-3 ml-auto fade-in-up animated animatedFadeInUp">
 							<img src="<?php echo RUTA ?>/img/jael-sign.svg" alt="Jael" class="img-fluid">
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-12 rich-text fade-in">
+						<div class="col-12 rich-text fade-in-up animated animatedFadeInUp">
 							Creadora del #BusinessCoffee <a href="https://elorderdelcaos.com" target="_blank"><u>El Orden del Caos</u></a>, líder de un equipo multidisciplinario, Master Business Coach con decenas de casos de éxito y dot-connector por vocación en @<a href="https://www.instagram.com/sumadetalentos/" target="_blank"><u>sumadetalentos</u></a>.
 						</div>
 					</div>
 					<div class="row">
-						<ul class="col-12 contatc-list-items fade-in">
+						<ul class="col-12 contatc-list-items fade-in-up animated animatedFadeInUp">
 							<li>
 								<a href="https://api.whatsapp.com/send?phone=+529992690014" target="_blank">WhatsApp</a>
 							</li>
