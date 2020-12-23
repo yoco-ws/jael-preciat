@@ -45,12 +45,16 @@ a:focus {
 
 .contatc-list-items {
 	display: flex;
+	padding-left: 1.5rem;
+
+	margin-top: 2.5rem;
 
 	li {
+		margin-right: 2.5rem;
+		list-style: none;
+
 		a {
-			&:hover, &:focus {
-				
-			}
+			padding: .5rem 2.5px .5rem 0rem;
 		}
 	}
 }

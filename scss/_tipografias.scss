@@ -45,6 +45,21 @@ $black: #000;
 	}
 }
 
+.contatc-list-items {
+	li {
+		color: $customize_brown;
+
+		a {
+			font: 1.3rem rubik-light;
+			transition-duration: .5s;
+
+			&, &:hover, &:focus {
+				color: inherit;
+			}
+		}
+	}
+}
+
 
 @font-face{
 	font-family: koch-antiqua-roman; 
