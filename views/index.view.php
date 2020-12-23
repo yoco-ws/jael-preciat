@@ -8,11 +8,9 @@
 
 		<meta property="og:url"                content="<?php echo $URL; ?>" />
 		<meta property="og:type"               content="website" />
-		<meta property="og:title"              content="Title site" />
-		<meta property="og:description"        content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. " />
-		<meta property="og:image"              content="<?php echo $URL; ?>/img/sharing/example.png" />
+		<meta property="og:title"              content="Jael Preciat, Dot-Connetor" />
+		<meta property="og:description"        content="Creadora del #BusinessCoffee El Orden del Caos, líder de un equipo multidisciplinario, Master Business Coach con decenas de casos de éxito y dot-connector por vocación en @sumadetalentos." />
+		<meta property="og:image"              content="<?php echo $URL; ?>/img/jael-sharing.png" />
 
 		<?php echo $favicon; ?>
 		<?php echo $normalize_css; ?>
