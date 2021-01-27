@@ -20,7 +20,6 @@ $black: #000;
 }
 .main-name {
 	color: white;
-	mix-blend-mode: difference;
 	font-size: 13rem;
 }
 
@@ -109,6 +108,21 @@ $black: #000;
 	color: white;
 	font-size: 3.5rem; 
 	font-family: koch-antiqua-roman;
+}
+
+@media (max-width:767px) {
+	.main-name {
+		font-size: 5rem;
+	}
+
+	.h2, .h3 {
+		font-size: 3.4rem;
+		line-height: 1;
+	}
+
+	.anchor {
+		font-size: 1.6rem;
+	}
 }
 
 
