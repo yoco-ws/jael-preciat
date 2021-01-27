@@ -7,60 +7,17 @@
 }
 
 //Colors
-
-$customize_brown: #894A40;
+$first_layer_color: #fff6f3;
+$second_layer_color: #ECDDD7;
+$third_layer_color: #000;
+$dark_red: #441915;
 $black: #000;
 
 //Tamaños de tipografías
 
-.title{
-
-}
-
-.paragraph{
-
-}
-
-.button{
-
-}
-
-.quote {
-	font: 3rem koch-antiqua-roman;
-	color: $customize_brown;
-}
-
-.rich-text {
-	font: 1.5rem rubik-regular;
-	color: $black;
-
-	transition-duration: .5s;
-
-	* {
-		color: inherit;
-	}
-
-	a:hover, a:focus {
-		color: $customize_brown;
-	}
-}
-
-.contatc-list-items {
-	li {
-		color: $customize_brown;
-
-		a {
-			font: 1.3rem rubik-light;
-			transition-duration: .5s;
-
-			&, &:hover, &:focus {
-				color: inherit;
-			}
-		}
-	}
-}
 
 
+//Typografías
 @font-face{
 	font-family: koch-antiqua-roman; 
 	src: url("../fonts/own-fonts/koch-antiqua-roman.ttf");

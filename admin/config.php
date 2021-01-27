@@ -1,7 +1,7 @@
 <?php 
 
 
-	define('RUTA','http://localhost/jael/');
+	define('RUTA','http://localhost:8888/jael/');
 
 
 
