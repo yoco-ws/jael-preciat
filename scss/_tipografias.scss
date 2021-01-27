@@ -14,6 +14,102 @@ $dark_red: #441915;
 $black: #000;
 
 //Tamaños de tipografías
+.main-name,
+.h2, .h3 {
+	font-family: koch-antiqua-roman;
+}
+.main-name {
+	color: white;
+	mix-blend-mode: difference;
+	font-size: 13rem;
+}
+
+.h2, .h3, .h6 {
+	color: $dark_red;
+
+	&.white {
+		color: white;
+	}
+}
+
+.h2 {
+	line-height: .9;
+	text-align: center;
+	font-size: 5rem;
+}
+
+.h3 {
+	font-size: 4rem;
+}
+
+.h6, .font-base {
+	font-family: rubik-light;
+
+	* {
+		font-family: inherit;
+	}
+}
+
+.h6 {
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.font-base {
+	color: $black!important;
+	font-size: 1.6rem;
+
+	&.white {
+		color: white!important;
+	}
+
+	* {
+		color: inherit;
+	}
+
+	a {
+		text-decoration: underline;
+		color: inherit;
+	}
+}
+
+.anchor {
+	color: $black!important;
+	text-transform: uppercase;
+
+	text-decoration: underline;
+
+	font-size: 1.8rem;
+	font-family: rubik-light;
+}
+
+.icon-card {
+	.text,
+	.list-data {
+		text-align: center;
+		color: $black!important;
+		font-family: rubik-light;
+
+		* {
+			color: inherit;
+		}
+	}
+
+	.text {
+		font-size: 1.8rem;
+	}
+
+	.list-data {
+		font-size: 1.5rem;
+		text-decoration: underline;
+	}
+}
+
+.footer span {
+	color: white;
+	font-size: 3.5rem; 
+	font-family: koch-antiqua-roman;
+}
 
 
 

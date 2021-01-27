@@ -55,7 +55,7 @@
 									</p>
 								</div>
 								<a href="#" class="anchor">
-									Conectemos
+									Conectémos
 								</a>
 							</main>
 						</div>
@@ -63,26 +63,22 @@
 				</div>
 				<div class="background-square"></div>
 			</div>
-			
-		</div>
-
-		<div class="container-fluid px-0 scrolling-slider">
 			<div class="page-slide second-slide">
 				<div class="background-round">
 					<div class="content">
 						<div class="row">
-							<figure class="col-12 col-md-3 mx-auto">
+							<figure class="col-12 col-md-3 mx-auto mb-5">
 								<img src="<?php echo RUTA; ?>img/jael-cartoon.svg" alt="" class="img-fluid w-100">
 							</figure>
 						</div>
-						<div class="row">
+						<div class="row mb-4">
 							<div class="col-12 col-md-6 mx-auto">
 								<h2 class="h2">
 									Me mueven las nuevas dinámicas laborales que surgen de la conectividad, de los nuevos estilos de vida y de la colaboración.
 								</h2>
 							</div>
 						</div>
-						<div class="row">
+						<div class="row align-items-center">
 							<div class="col-12 col-md-4 ml-md-auto">
 								<div class="font-base">
 									<p>
@@ -91,34 +87,30 @@
 								</div>
 							</div>
 							<div class="col-12 col-md-3 mr-md-auto offset-md-1 ">
-								
+								<img src="https://via.placeholder.com/450" alt="" class="img-fluid">
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="background-square"></div>
 			</div>
-			
-		</div>
-
-		<div class="container-fluid px-0 scrolling-slider">
 			<div class="page-slide third-slide">
 				<div class="background-round">
 					<div class="content">
 						<div class="row">
-							<div class="col-12 col-md-4 mx-auto">
+							<div class="col-12 col-md-4 mx-auto mb-5">
 								<img src="<?php echo RUTA; ?>img/sol.svg" alt="" class="img-fluid w-100">
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-12 col-md-6 mx-auto">
+							<div class="col-12 col-md-5 mx-auto mt-3">
 								<h2 class="h2 white">
 									Trabajamos desde la antesala de las ideas, con lo más importante: la energía creadora.
 								</h2>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-12 col-md-6 mx-auto font-base">
+							<div class="col-12 col-md-6 mx-auto font-base text-center white mt-5">
 								<p>
 									Excolaboradora de Coca-Cola de México y Cervecería Cuauhtémoc-Moctezuma, Directora Comercial de Grupo Cielo, creadora del business coffee <a target="blank" href="https://elordendelcaos.com">El Orden del Caos</a>, mercadóloga y <b>master business coach por carrera y vocación</b>, Jael transmite la mística de una mujer tan conectada al Universo como al mundo de los negocios.
 								</p>
@@ -131,169 +123,172 @@
 				</div>
 				<div class="background-square"></div>
 			</div>
-
-			<div class="container-fluid px-0 scrolling-slider">
 			<div class="page-slide fourth-slide">
-				<div class="background-round">
-					<div class="content">
-						<div class="row">
-							<div class="col-12 col-md-6 mx-auto">
-								<h2 class="h2">
-									Abrámosle la puerta a las ideas que parten del desorden y que generan un impacto positivo.
-								</h2>
+				<div class="background-round"></div>
+				<div class="background-square"></div>
+				<div class="content">
+					<div class="row">
+						<div class="col-12 col-md-6 mx-auto">
+							<h2 class="h2">
+								Abrámosle la puerta a las ideas que parten del desorden y que generan un impacto positivo.
+							</h2>
+						</div>
+					</div>
+					<div class="row align-items-end">
+						<div class="col-12 col-md-4 ml-md-auto mb-5 px-md-5">
+							<div class="font-base">
+								<p>
+									Vive un proceso de consultoría de creación para proyectos de cero a cien o en alguna fase en específico, de acompañamiento creativo, de performance coaching de líderes y sus equipos, súmate a su comunidad de talentos, conecta con proyectos multidisciplinarios, inspírate con un café…
+								</p>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-12 col-md-3 ml-md-auto">
-								<div class="font-base">
-									<p>
-										Vive un proceso de consultoría de creación para proyectos de cero a cien o en alguna fase en específico, de acompañamiento creativo, de performance coaching de líderes y sus equipos, súmate a su comunidad de talentos, conecta con proyectos multidisciplinarios, inspírate con un café…
-									</p>
+						<div class="col-12 col-md-3 mr-md-auto">
+							<img src="https://via.placeholder.com/450x510" alt="" class="img-fluid">
+						</div>
+					</div>
+					<div class="row list-content">
+						<div class="col-12 col-lg-10 mx-auto">
+							<div class="row">
+								<div class="col-12 col-md-3 icon-card">
+									<div class="row">
+										<div class="col-6 mx-auto">
+											<img src="<?php echo RUTA; ?>img/inspiracion-icon.svg" alt="" class="img-fluid">
+										</div>
+									</div>
+									<div class="row">
+										<p class="col-12 text">
+											Inspiración holística para los negocios
+										</p>
+									</div>
+									<div class="row">
+										<h6 class="col-12 h6">
+											Instagram
+										</h6>
+									</div>
+									<div class="row">
+										<ul class="col-12 list-data">
+											<li>
+												<a target="_blank" href="">
+													@jaelpreciat
+												</a>
+											</li>
+										</ul>
+									</div>
 								</div>
-							</div>
-							<div class="col-12 col-md-3 mr-md-auto offset-md-1 ">
-								
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-12 col-lg-10 mx-auto">
-								<div class="row">
-									<div class="col-12 col-md-3 icon-card">
-										<div class="row">
-											<div class="col-6 mx-auto">
-												<img src="<?php echo RUTA; ?>img/inspiracion-icon.svg" alt="" class="img-fluid">
-											</div>
-											<p class="text">
-												Inspiración holística para los negocios
-											</p>
-											<h6 class="h6">
-												Instagram
-											</h6>
-											<ul class="list-data">
-												<li>
-													<a target="_blank" href="">
-														@jaelpreciat
-													</a>
-												</li>
-											</ul>
+								<div class="col-12 col-md-3 icon-card">
+									<div class="row">
+										<div class="col-6 mx-auto">
+											<img src="<?php echo RUTA; ?>img/business-coffee-icon.svg" alt="" class="img-fluid">
 										</div>
 									</div>
-									<div class="col-12 col-md-3 icon-card">
-										<div class="row">
-											<div class="col-6 mx-auto">
-												<img src="<?php echo RUTA; ?>img/business-coffee-icon.svg" alt="" class="img-fluid">
-											</div>
-											<p class="text">
-												Conoce mi business coffee
-											</p>
-											<h6 class="h6">
-												Orden del Caos
-											</h6>
-											<ul class="list-data">
-												<li>
-													<a target="_blank" href="">
-														Reserva la sala
-													</a>
-												</li>
-												<li>
-													<a target="_blank" href="">
-														Instagram
-													</a>
-												</li>
-												<li>
-													<a target="_blank" href="">
-														Menú
-													</a>
-												</li>
-											</ul>
+									<div class="row">
+										<p class="col-12 text">
+											Conoce mi business coffee
+										</p>
+									</div>
+									<div class="row">
+										<h6 class="col-12 h6">
+											Orden del Caos
+										</h6>
+									</div>
+									<div class="row">
+										<ul class="col-12 list-data">
+											<li>
+												<a target="_blank" href="">
+													Reserva la sala
+												</a>
+											</li>
+											<li>
+												<a target="_blank" href="">
+													Instagram
+												</a>
+											</li>
+											<li>
+												<a target="_blank" href="">
+													Menú
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-12 col-md-3 icon-card">
+									<div class="row">
+										<div class="col-6 mx-auto">
+											<img src="<?php echo RUTA; ?>img/dot-connector-icon.svg" alt="" class="img-fluid">
 										</div>
 									</div>
-									<div class="col-12 col-md-3 icon-card">
-										<div class="row">
-											<div class="col-6 mx-auto">
-												<img src="<?php echo RUTA; ?>img/dot-connector-icon.svg" alt="" class="img-fluid">
-											</div>
-											<p class="text">
-												Unamos puntos
-											</p>
-											<h6 class="h6">
-												Suma de Talentos
-											</h6>
-											<ul class="list-data">
-												<li>
-													<a target="_blank" href="">
-														Comunidad
-													</a>
-												</li>
-												<li>
-													<a target="_blank" href="">
-														Podcast
-													</a>
-												</li>
-												<li>
-													<a target="_blank" href="">
-														Instagram
-													</a>
-												</li>
-											</ul>
+									<div class="row">
+										<p class="col-12 text">
+											Unamos puntos
+										</p>
+									</div>
+									<div class="row">
+										<h6 class="col-12 h6">
+											Suma de Talentos
+										</h6>
+									</div>
+									<div class="row">
+										<ul class="col-12 list-data">
+											<li>
+												<a target="_blank" href="">
+													Comunidad
+												</a>
+											</li>
+											<li>
+												<a target="_blank" href="">
+													Podcast
+												</a>
+											</li>
+											<li>
+												<a target="_blank" href="">
+													Instagram
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-12 col-md-3 icon-card">
+									<div class="row">
+										<div class="col-6 mx-auto">
+											<img src="<?php echo RUTA; ?>img/conectemos-icon.svg" alt="" class="img-fluid">
 										</div>
 									</div>
-									<div class="col-12 col-md-3 icon-card">
-										<div class="row">
-											<div class="col-6 mx-auto">
-												<img src="<?php echo RUTA; ?>img/inspiracion-icon.svg" alt="" class="img-fluid">
-											</div>
-											<p class="text">
-												Conoce mi business coffee
-											</p>
-											<h6 class="h6">
-												Agenda una cita
-											</h6>
-											<ul class="list-data">
-												<li>
-													<a target="_blank" href="">
-														Whatsapp
-													</a>
-												</li>
-											</ul>
-										</div>
+									<div class="row">
+										<p class="col-12 text">
+											Conoce mi business coffee
+										</p>
 									</div>
-											</p>
-											<h6 class="h6">
-												Instagram
-											</h6>
-											<ul class="list-data">
-												<li>
-													<a target="_blank" href="">
-														Reserva la sala
-													</a>
-												</li>
-												<li>
-													<a target="_blank" href="">
-														Instagram
-													</a>
-												</li>
-												<li>
-													<a target="_blank" href="">
-														Menú
-													</a>
-												</li>
-											</ul>
-										</div>
+									<div class="row">
+										<h6 class="col-12 h6">
+											Agenda una cita
+										</h6>
+									</div>
+									<div class="row">
+										<ul class="col-12 list-data">
+											<li>
+												<a target="_blank" href="">
+													Whatsapp
+												</a>
+											</li>
+										</ul>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="background-square"></div>
 			</div>
-			
+			<footer class="footer">
+				<span>Jael Preciat</span>
+			</footer>
 		</div>
 
-		<footer class="footer">
-			<span>Jael Preciat</span>
-		</footer>
+		
+
+
+		
+
+		
 		
 		<!-- jQuery first, then Tether, then Bootstrap JS. -->
 		<?php echo $jquery_js; ?>
