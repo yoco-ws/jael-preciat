@@ -88,7 +88,7 @@
 									</p>
 								</div>
 							</div>
-							<div class="col-12 col-md-3 mr-md-auto offset-md-1 people-connected-animation">
+							<div class="col-12 col-md-3 mr-md-auto offset-md-1 people-connected-animation" id="people-connected-animation">
 								<img src="<?php echo RUTA; ?>img/people-connected-layer-1.svg" alt="" class="img-fluid first-layer">
 								<img src="<?php echo RUTA; ?>img/people-connected-layer-2.svg" alt="" class="img-fluid second-layer">
 							</div>
