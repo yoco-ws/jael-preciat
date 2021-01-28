@@ -14,6 +14,8 @@
 		consequat. " />
 		<meta property="og:image"              content="<?php echo $URL; ?>/img/sharing/example.png" />
 
+		<meta name="root-url" content="<?php echo RUTA ?>" />
+
 		<?php echo $favicon; ?>
 		<?php echo $normalize_css; ?>
 		<?php echo $boostrap_v4_css ?>
@@ -86,8 +88,9 @@
 									</p>
 								</div>
 							</div>
-							<div class="col-12 col-md-3 mr-md-auto offset-md-1 ">
-								<img src="https://via.placeholder.com/450" alt="" class="img-fluid">
+							<div class="col-12 col-md-3 mr-md-auto offset-md-1 people-connected-animation">
+								<img src="<?php echo RUTA; ?>img/people-connected-layer-1.svg" alt="" class="img-fluid first-layer">
+								<img src="<?php echo RUTA; ?>img/people-connected-layer-2.svg" alt="" class="img-fluid second-layer">
 							</div>
 						</div>
 					</div>
@@ -142,8 +145,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="col-11 col-md-3 mx-auto ml-md-0 mr-md-auto">
-							<img src="https://via.placeholder.com/450x510" alt="" class="img-fluid">
+						<div class="col-11 col-md-3 mx-auto ml-md-0 mr-md-auto lottie-animation" data-animation-name="jaels-cup" data-loop="1" speed="1">
 						</div>
 					</div>
 					<div class="row list-content">
@@ -151,9 +153,7 @@
 							<div class="row">
 								<div class="col-12 col-md-3 icon-card">
 									<div class="row">
-										<div class="col-6 mx-auto">
-											<img src="<?php echo RUTA; ?>img/inspiracion-icon.svg" alt="" class="img-fluid">
-										</div>
+										<div class="col-6 mx-auto mb-4 lottie-animation" data-animation-name="inspiracion" data-loop="1" speed="1"></div>
 									</div>
 									<div class="row">
 										<p class="col-12 text">
@@ -177,9 +177,7 @@
 								</div>
 								<div class="col-12 col-md-3 icon-card">
 									<div class="row">
-										<div class="col-6 mx-auto">
-											<img src="<?php echo RUTA; ?>img/business-coffee-icon.svg" alt="" class="img-fluid">
-										</div>
+										<div class="col-6 mx-auto mb-4 lottie-animation" data-animation-name="business-coffee" data-loop="1" speed="1"></div>
 									</div>
 									<div class="row">
 										<p class="col-12 text">
@@ -213,9 +211,7 @@
 								</div>
 								<div class="col-12 col-md-3 icon-card">
 									<div class="row">
-										<div class="col-6 mx-auto">
-											<img src="<?php echo RUTA; ?>img/dot-connector-icon.svg" alt="" class="img-fluid">
-										</div>
+										<div class="col-6 mx-auto mb-4 lottie-animation" data-animation-name="dot-connector" data-loop="1" speed="1"></div>
 									</div>
 									<div class="row">
 										<p class="col-12 text">
@@ -249,9 +245,7 @@
 								</div>
 								<div class="col-12 col-md-3 icon-card">
 									<div class="row">
-										<div class="col-6 mx-auto">
-											<img src="<?php echo RUTA; ?>img/conectemos-icon.svg" alt="" class="img-fluid">
-										</div>
+										<div class="col-6 mx-auto mb-4 lottie-animation" data-animation-name="conectemos" data-loop="1" speed="1"></div>
 									</div>
 									<div class="row">
 										<p class="col-12 text">
@@ -302,6 +296,7 @@
 		<?php echo $bootstrap_v4_js; ?>
 
 		<?php echo $font_awesome_js; ?>
+		<?php echo $lottie_js; ?>
 		
 	</body>
 </html>

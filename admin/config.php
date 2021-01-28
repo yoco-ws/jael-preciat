@@ -30,7 +30,7 @@
 
 	#Own 
 	#	js
-		$own_file_js = '<script src="'.RUTA.'js/example.js"></script>';
+		$own_file_js = '<script src="'.RUTA.'js/jael-preciat.js"></script>';
 	#	css
 		$own_file_css = '<link rel="stylesheet" href="'.RUTA.'css/jael-preciat.min.css">';
 	
