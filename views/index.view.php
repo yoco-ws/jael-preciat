@@ -99,7 +99,7 @@
 				</div>
 				<div class="background-square"></div>
 			</div>
-			<div class="page-slide third-slide">
+			<div class="page-slide third-slide" id="third-slide">
 				<div class="background-round">
 					<div class="content">
 						<div class="row">
@@ -128,7 +128,7 @@
 				</div>
 				<div class="background-square"></div>
 			</div>
-			<div class="page-slide fourth-slide">
+			<div class="page-slide fourth-slide" id="fourth-slide">
 				<div class="background-round"></div>
 				<div class="background-square"></div>
 				<div class="content">
@@ -296,9 +296,6 @@
 
 
 		<?php echo $bootstrap_v4_js; ?>
-
-		<?php echo $scroll_magic; ?>
-		<?php echo $scroll_magic_debugging; ?>
 
 		<?php echo $lottie_js; ?>
 		

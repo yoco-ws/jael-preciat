@@ -3,23 +3,7 @@
 **/
 
 $(function() {
-    /**
-        Scroll Magic
-    **/
-
-    // init controller
-    var controller = new ScrollMagic.Controller();
-
-    // create a scene
-    new ScrollMagic.Scene({
-        duration: $('#second-slide').height(), // the scene should last for a scroll distance of 100px
-        offset: 0, // start this scene after scrolling for 50px
-        triggerElement: "#second-slide",
-        triggerHook: 0
-    })
-    .setPin('#second-slide') // pins the element for the the scene's duration
-    .addTo(controller) // assign the scene to the controller
-    .addIndicators();
+    
 });
 
 $("body").mousemove(function(e) {
@@ -72,6 +56,67 @@ function esVisible(elem){
     return ((elemBottom < posButView && elemBottom > posTopView) || (elemTop >posTopView && elemTop< posButView));
 }
 
+/**
+    Scroll Animation Script
+**/
+var lastScrollTop = 0;
+$(document).scroll(function() {
+    var topScrollPosition = $(window).scrollTop() + $(window).height();
+
+    var secondSlide = $("#second-slide");
+    scaleLayer( topScrollPosition, secondSlide );
+
+    var thirdSlide = $("#third-slide");
+    scaleLayer( topScrollPosition, thirdSlide );
+
+    var fourthSlide = $("#fourth-slide");
+    scaleLayer( topScrollPosition, fourthSlide );
+
+    lastScrollTop = topScrollPosition;
+});
+
+function scaleLayer( topScrollPosition, slide ){
+    var step = topScrollPosition / 3000;
+
+    var slidePosition = slide.offset().top + ($(window).height());
+
+
+    if ( topScrollPosition > slidePosition ) {
+        borderRadius = parseFloat(slide.children(".background-round").css('border-top-right-radius').slice(0, -1));
+
+        //Scroll Down
+        if( topScrollPosition <= lastScrollTop ){
+            newBorderRadius =  borderRadius + step;
+        } else { //Scroll Up
+            newBorderRadius =  borderRadius - step;
+        }
+
+        if( parseInt(newBorderRadius) <= 0 ){
+            slide.children(".background-round").css({
+                'border-top-right-radius': '0%',
+                'border-top-left-radius': '0%'
+            });
+        } else if( parseInt(newBorderRadius) <= 50 ){
+
+            slide.children(".background-round").css({
+                'border-top-right-radius': newBorderRadius.toFixed(3) + '%',
+                'border-top-left-radius': newBorderRadius.toFixed(3) + '%'
+            });
+
+        } else {
+            slide.children(".background-round").css({
+                'border-top-right-radius': '50%',
+                'border-top-left-radius': '50%'
+            });
+        }
+        
+    } else {
+        slide.children(".background-round").css({
+            'border-top-right-radius': '50%',
+            'border-top-left-radius': '50%'
+        });
+    }
+}
 
 /**
     Lottie code JS
