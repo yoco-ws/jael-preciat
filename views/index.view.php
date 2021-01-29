@@ -4,15 +4,13 @@
 	<head>
 		<meta charset="UTF-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>Title site</title>
+		<title>Jael Preciat</title>
 
-		<meta property="og:url"                content="<?php echo $URL; ?>" />
+		<meta property="og:url"                content="<?php echo RUTA; ?>" />
 		<meta property="og:type"               content="website" />
-		<meta property="og:title"              content="Title site" />
-		<meta property="og:description"        content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. " />
-		<meta property="og:image"              content="<?php echo $URL; ?>/img/sharing/example.png" />
+		<meta property="og:title"              content="Jael Preciat" />
+		<meta property="og:description"        content="Trabajamos desde la antesala de las ideas, con lo más importante: la energía creadora." />
+		<meta property="og:image"              content="<?php echo RUTA; ?>img/jael_pic.png" />
 
 		<meta name="root-url" content="<?php echo RUTA ?>" />
 
@@ -90,7 +88,7 @@
 									</p>
 								</div>
 							</div>
-							<div class="col-12 col-md-3 mr-md-auto offset-md-1 people-connected-animation" id="people-connected-animation">
+							<div class="col-10 col-md-3 mx-auto mr-md-auto offset-md-1 people-connected-animation" id="people-connected-animation">
 								<img src="<?php echo RUTA; ?>img/people-connected-layer-1.svg" alt="" class="img-fluid first-layer">
 								<img src="<?php echo RUTA; ?>img/people-connected-layer-2.svg" alt="" class="img-fluid second-layer">
 							</div>
@@ -123,6 +121,9 @@
 									Tal vez ese signo de evolución personal sea la razón por la que puede ocuparse por igual de lo estratégico y lo ejecutivo, sin olvidar al individuo creador. Esta es la base de su metodología Business Therapy, con la que ha acompañado decenas de proyectos tan variados como exitosos, como estratega y <b>dot-connector</b> natural.
 								</p>
 							</div>
+							<div class="col-5 col-md-2 mx-auto lines-and-stars my-4 fadeInRight">
+								<img src="<?php echo RUTA; ?>img/lines-and-stars.svg" alt="" class="img-fluid">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -133,7 +134,7 @@
 				<div class="background-square"></div>
 				<div class="content">
 					<div class="row">
-						<div class="col-11 col-md-6 mx-auto">
+						<div class="col-11 col-md-6 mx-auto mb-5">
 							<h2 class="h2">
 								Abrámosle la puerta a las ideas que parten del desorden y que generan un impacto positivo.
 							</h2>

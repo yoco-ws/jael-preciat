@@ -7,7 +7,7 @@ $(function() {
 });
 
 $("body").mousemove(function(e) {
-    if( ($( window ).width() > 1024 ) {
+    if( $(window).width() > 1024 ) {
         var item = $('#people-connected-animation');
         if( esVisible(item) ){
             //console.log("X Axis: " + e.clientX + ", Y Axis: " + e.clientY);
@@ -65,7 +65,8 @@ var lastScrollTop = 0;
 $(document).scroll(function() {
     var topScrollPosition = $(window).scrollTop() + $(window).height();
 
-    if( ($( window ).width() > 1024 ) {
+    if( $(window).width() > 1024 ) {
+
         var firstSlide = $("#first-slide");
         scaleLayer( topScrollPosition, firstSlide, lastScrollTop );
 

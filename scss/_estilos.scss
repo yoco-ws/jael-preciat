@@ -71,6 +71,10 @@ a:focus {
 			margin-top: -15rem;
 		}
 
+		.content {
+			margin-top: -15rem;
+		}
+
 	}
 
 	&.second-slide {
@@ -161,7 +165,7 @@ a:focus {
 
 .name-container {
 	position: absolute;
-	top: 19rem;
+	top: 32rem;
 	width: 100%;
 
 	mix-blend-mode: difference;
@@ -205,6 +209,31 @@ a:focus {
 	}
 }
 
+.row {
+	position: relative;
+
+	.lines-and-stars {
+		position: absolute;
+		right: 15%;
+		bottom: -20rem;
+	}
+}
+
+.fadeInRight {
+    animation-name: fadeInRight;
+}
+
+
+@keyframes fadeInRight {
+   0% {
+      opacity: 0;
+      transform: translateX(20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+} 
 
 @media (max-width:767px) {
 
@@ -291,7 +320,7 @@ a:focus {
 		}
 
 		&.third-slide {
-			margin-top: 0rem;
+			margin-top: 8rem;
 
 			&:before,
 			&:after {
@@ -409,17 +438,19 @@ a:focus {
 					margin-left: auto;
 					margin-right: auto;
 				}
-
-				.star-img {
-					position: relative;
-				}
 			}
 		}
 	}
 
 	.name-container {
-		top: 4.8rem;
+		top: 17.8rem;
 		text-decoration: center;
+	}
+
+	.row .lines-and-stars {
+		position: relative;
+		right: auto;
+		bottom: auto;
 	}
 	
 
