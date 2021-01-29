@@ -30,7 +30,7 @@
 	<body>
 
 		<div class="container-fluid px-0 scrolling-slider">
-			<div class="page-slide first-slide">
+			<div class="page-slide first-slide" id="first-slide">
 				<div class="background-round">
 					<div class="content">
 						<div class="row name-container">

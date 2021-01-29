@@ -7,12 +7,14 @@ $(function() {
 });
 
 $("body").mousemove(function(e) {
-    var item = $('#people-connected-animation');
-    if( esVisible(item) ){
-        //console.log("X Axis: " + e.clientX + ", Y Axis: " + e.clientY);
-        perspectiveAnimation( e.clientX, e.clientY, item );
-    } else {
-        restartAnimation( item );
+    if( ($( window ).width() > 1024 ) {
+        var item = $('#people-connected-animation');
+        if( esVisible(item) ){
+            //console.log("X Axis: " + e.clientX + ", Y Axis: " + e.clientY);
+            perspectiveAnimation( e.clientX, e.clientY, item );
+        } else {
+            restartAnimation( item );
+        }
     }
 });
 
@@ -63,22 +65,28 @@ var lastScrollTop = 0;
 $(document).scroll(function() {
     var topScrollPosition = $(window).scrollTop() + $(window).height();
 
-    var secondSlide = $("#second-slide");
-    scaleLayer( topScrollPosition, secondSlide );
+    if( ($( window ).width() > 1024 ) {
+        var firstSlide = $("#first-slide");
+        scaleLayer( topScrollPosition, firstSlide, lastScrollTop );
 
-    var thirdSlide = $("#third-slide");
-    scaleLayer( topScrollPosition, thirdSlide );
+        var secondSlide = $("#second-slide");
+        scaleLayer( topScrollPosition, secondSlide, lastScrollTop );
 
-    var fourthSlide = $("#fourth-slide");
-    scaleLayer( topScrollPosition, fourthSlide );
+        var thirdSlide = $("#third-slide");
+        scaleLayer( topScrollPosition, thirdSlide, lastScrollTop );
+
+        var fourthSlide = $("#fourth-slide");
+        scaleLayer( topScrollPosition, fourthSlide, lastScrollTop );
+    }
 
     lastScrollTop = topScrollPosition;
 });
 
-function scaleLayer( topScrollPosition, slide ){
+function scaleLayer( topScrollPosition, slide, lastScrollTop ){
     var step = topScrollPosition / 3000;
+    var slidePosition = slide.offset().top + $(window).height();
 
-    var slidePosition = slide.offset().top + ($(window).height());
+    var footerPosition = $(window).scrollTop() + $(window).height()
 
 
     if ( topScrollPosition > slidePosition ) {
@@ -107,6 +115,20 @@ function scaleLayer( topScrollPosition, slide ){
             slide.children(".background-round").css({
                 'border-top-right-radius': '50%',
                 'border-top-left-radius': '50%'
+            });
+        }
+
+        if( $(window).scrollTop() == 0 ){
+            slide.children(".background-round").css({
+                'border-top-right-radius': '50%',
+                'border-top-left-radius': '50%'
+            });
+        }
+
+        if( topScrollPosition == $(document).height() ){
+            slide.children(".background-round").css({
+                'border-top-right-radius': '12%',
+                'border-top-left-radius': '12%'
             });
         }
         
