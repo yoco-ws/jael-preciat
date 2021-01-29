@@ -28,6 +28,9 @@
 
 	$lottie_js = "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.8/lottie.min.js\" integrity=\"sha256-QWuFU4W0oiKnJa3GVz5Z+pNf91eTYdmHogcIeJpWON0=\" crossorigin=\"anonymous\"></script>";
 
+	$scroll_magic = '<script src="'.RUTA.'js/ScrollMagic.js"></script>';
+	$scroll_magic_debugging = '<script src="'.RUTA.'js/debug.addIndicators.js"></script>';
+
 	#Own 
 	#	js
 		$own_file_js = '<script src="'.RUTA.'js/jael-preciat.js"></script>';

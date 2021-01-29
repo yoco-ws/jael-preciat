@@ -146,6 +146,15 @@ a:focus {
 
 		.main-text {
 			margin-top: 40rem;
+			position: relative;
+
+			.star-img {
+				position: absolute;
+				width: 60%;
+				height: auto;
+				bottom: 10%;
+				right: -25%;
+			}
 		}
 	}
 }
@@ -399,6 +408,10 @@ a:focus {
 					width: 75%;
 					margin-left: auto;
 					margin-right: auto;
+				}
+
+				.star-img {
+					position: relative;
 				}
 			}
 		}

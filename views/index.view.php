@@ -42,7 +42,7 @@
 						</div>
 						<div class="row">
 							<figure class="col-12 col-md-7">
-								<img src="<?php echo RUTA; ?>img/jael_pic.png" alt="" class="img-fluid w-100">
+								<img src="<?php echo RUTA; ?>img/jael_pic.png" alt="" class="img-fluid w-100" width="10" height="10">
 							</figure>
 							<main class="col-12 col-md-4 main-text">
 								<h3 class="h3">
@@ -59,13 +59,15 @@
 								<a href="#" class="anchor">
 									Conectémos
 								</a>
+
+								<img src="<?php echo RUTA; ?>img/dots-star.svg" alt="" width="10" height="10" class="star-img">
 							</main>
 						</div>
 					</div>
 				</div>
 				<div class="background-square"></div>
 			</div>
-			<div class="page-slide second-slide">
+			<div class="page-slide second-slide" id="second-slide">
 				<div class="background-round">
 					<div class="content">
 						<div class="row">
@@ -145,7 +147,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="col-11 col-md-3 mx-auto ml-md-0 mr-md-auto lottie-animation" data-animation-name="jaels-cup" data-loop="1" speed="1">
+						<div class="col-11 col-md-3 mx-auto ml-md-0 mr-md-auto lottie-animation" data-animation-name="jaels-cup" data-loop="-1" speed="1">
 						</div>
 					</div>
 					<div class="row list-content">
@@ -153,7 +155,7 @@
 							<div class="row">
 								<div class="col-12 col-md-3 icon-card">
 									<div class="row">
-										<div class="col-6 mx-auto mb-4 lottie-animation" data-animation-name="inspiracion" data-loop="1" speed="1"></div>
+										<div class="col-6 mx-auto mb-4 lottie-animation" data-animation-name="inspiracion" data-loop="-1" speed="1"></div>
 									</div>
 									<div class="row">
 										<p class="col-12 text">
@@ -177,7 +179,7 @@
 								</div>
 								<div class="col-12 col-md-3 icon-card">
 									<div class="row">
-										<div class="col-6 mx-auto mb-4 lottie-animation" data-animation-name="business-coffee" data-loop="1" speed="1"></div>
+										<div class="col-6 mx-auto mb-4 lottie-animation" data-animation-name="business-coffee" data-loop="-1" speed="1"></div>
 									</div>
 									<div class="row">
 										<p class="col-12 text">
@@ -211,7 +213,7 @@
 								</div>
 								<div class="col-12 col-md-3 icon-card">
 									<div class="row">
-										<div class="col-6 mx-auto mb-4 lottie-animation" data-animation-name="dot-connector" data-loop="1" speed="1"></div>
+										<div class="col-6 mx-auto mb-4 lottie-animation" data-animation-name="dot-connector" data-loop="-1" speed="1"></div>
 									</div>
 									<div class="row">
 										<p class="col-12 text">
@@ -245,7 +247,7 @@
 								</div>
 								<div class="col-12 col-md-3 icon-card">
 									<div class="row">
-										<div class="col-6 mx-auto mb-4 lottie-animation" data-animation-name="conectemos" data-loop="1" speed="1"></div>
+										<div class="col-6 mx-auto mb-4 lottie-animation" data-animation-name="conectemos" data-loop="-1" speed="1"></div>
 									</div>
 									<div class="row">
 										<p class="col-12 text">
@@ -295,7 +297,9 @@
 
 		<?php echo $bootstrap_v4_js; ?>
 
-		<?php echo $font_awesome_js; ?>
+		<?php echo $scroll_magic; ?>
+		<?php echo $scroll_magic_debugging; ?>
+
 		<?php echo $lottie_js; ?>
 		
 	</body>

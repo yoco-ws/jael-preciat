@@ -2,8 +2,24 @@
     Custom JS
 **/
 
-$(function(){
+$(function() {
+    /**
+        Scroll Magic
+    **/
 
+    // init controller
+    var controller = new ScrollMagic.Controller();
+
+    // create a scene
+    new ScrollMagic.Scene({
+        duration: $('#second-slide').height(), // the scene should last for a scroll distance of 100px
+        offset: 0, // start this scene after scrolling for 50px
+        triggerElement: "#second-slide",
+        triggerHook: 0
+    })
+    .setPin('#second-slide') // pins the element for the the scene's duration
+    .addTo(controller) // assign the scene to the controller
+    .addIndicators();
 });
 
 $("body").mousemove(function(e) {
@@ -24,52 +40,25 @@ $(window).on('mouseout', function() {
 });
 
 function restartAnimation( item ) {
-    item.children('.fisrt-layer').css({
-        'transform': 'perspective(1000px) rotateX(0deg) rotateY(0deg)',
-        'transition-duration': '1s',
-    });
-    item.children('.second-layer').css({
+    item.css({
         'transform': 'perspective(1000px) rotateX(0deg) rotateY(0deg)',
         'transition-duration': '1s',
     });
 }
 
 function perspectiveAnimation( x, y, item ) {
-    width_step = $( window ).width() / 10;
-    height_step = $( window ).height() / 10;
 
-    width_step_2 = $( window ).width() / 5;
-    height_step_2 = $( window ).height() / 10;
+    width_step = $( window ).width() / 20;
+    height_step = $( window ).height() / 20;
 
-    if( x < $( window ).width() / 2 ) {
-        width_step *= -1;
-        width_step_2 *= -1;
-    }
-
-    if( y > $( window ).height() / 2 ) {
-        height_step *= -1;
-        height_step_2 *= -1;
-    }
-
-    x_deg = x/width_step;
-    y_deg = y/height_step;
-
-    x_deg_2 = x/width_step_2;
-    y_deg_2 = y/height_step_2;
+    x_deg = (x - ($( window ).height()/2)) / height_step;
+    y_deg = -1 * ((y - ($( window ).width()/2)) / width_step);
 
     css_property = 'perspective(1000px) rotateX('+ y_deg.toFixed(3) +'deg) rotateY('+ x_deg.toFixed(3) +'deg)';
-    css_property_2 = 'perspective(1000px) rotateX('+ y_deg_2.toFixed(3) +'deg) rotateY('+ x_deg_2.toFixed(3) +'deg)';
-
-
-
-    item.children('.second-layer').css({'transform': css_property});
-    item.children('.first-layer').css({'transform': css_property_2});
+  
+    item.css({'transform': css_property, 'transition-duration': '0s'});
+    //item.children('.second-layer').css({'transform': css_property});
     //console.log("X Axis: " + x/width_step + ", Y Axis: " + y/height_step);
-    console.log(css_property);
-
-    var width_step;
-    var height_step;
-    var css_property;
 }
 
 function esVisible(elem){
