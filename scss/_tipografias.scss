@@ -58,8 +58,17 @@ $black: #000;
 	color: $black!important;
 	font-size: 1.6rem;
 
+	strong,b{
+		font-weight: normal;
+		font-family: rubik-bold !important;
+	}
 	&.white {
 		color: white!important;
+	}
+	a{
+		&:hover{
+			color: white !important;
+		}
 	}
 
 	* {
@@ -85,7 +94,15 @@ $black: #000;
 
 	&:hover,
 	&:focus {
-		color: $dark_red!important;
+		color: #43191A !important;
+	}
+}
+
+a{
+
+	&:hover,
+	&:focus {
+		color: #43191A !important;
 	}
 }
 
@@ -135,6 +152,16 @@ $black: #000;
 
 
 //Typografías
+@font-face{
+	font-family: rubik-bold; 
+	src: url("../fonts/own-fonts/Rubik-Medium.ttf");
+}
+
+.rubik-bold {
+	font-family: rubik-bold;
+}
+
+
 @font-face{
 	font-family: koch-antiqua-roman; 
 	src: url("../fonts/own-fonts/koch-antiqua-roman.ttf");

@@ -25,6 +25,26 @@ a:focus {
 	outline: none;
 }
 
+.animation-title{
+	display: block;
+    text-align: start;
+    position: relative;
+    overflow: hidden;
+	h1{
+	 	display: block;
+	    text-align: start;
+	    position: relative;
+	    transform: translate(0%, 140%) matrix3d(0.996195, 0.0871557, 0, 0, -0.0871557, 0.996195, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+	    opacity: 1;
+	    transition: 1.5s;
+
+	    &.active{
+	    	transform: translate3d(0px, 0px, 0px);
+	    	padding: 0.3rem;
+	    }
+	 }
+}
+
 .scrolling-slider {
 	overflow: hidden;
 }

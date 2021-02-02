@@ -6,23 +6,36 @@ $(function() {
     
 });
 
+setTimeout(function(){
+   $(".animation-title h1").addClass("active");
+
+},300,"JavaScript");
+
+
 $("body").mousemove(function(e) {
     if( $(window).width() > 1024 ) {
-        var item = $('#people-connected-animation');
-        if( esVisible(item) ){
-            //console.log("X Axis: " + e.clientX + ", Y Axis: " + e.clientY);
-            perspectiveAnimation( e.clientX, e.clientY, item );
-        } else {
-            restartAnimation( item );
-        }
+        $(".animation-mouse").each(function(){
+            var item = $(this);
+            if( esVisible(item) ){
+                //console.log("X Axis: " + e.clientX + ", Y Axis: " + e.clientY);
+                perspectiveAnimation( e.clientX, e.clientY, item );
+            } else {
+                restartAnimation( item );
+            }
+        });
+
+        
     }
 });
 
 $(window).on('mouseout', function() {
-    var item = $('#people-connected-animation');
-    if( esVisible(item) ){
-        restartAnimation( item );
-    }
+    $(".animation-mouse").each(function(){
+        var item = $(this);
+        if( esVisible(item) ){
+            restartAnimation( item );
+        }
+    });
+    
 });
 
 function restartAnimation( item ) {
@@ -90,7 +103,7 @@ function scaleLayer( topScrollPosition, slide, lastScrollTop ){
     var footerPosition = $(window).scrollTop() + $(window).height()
 
 
-    if ( topScrollPosition > slidePosition ) {
+    if ( topScrollPosition > slidePosition - 300 ) {
         borderRadius = parseFloat(slide.children(".background-round").css('border-top-right-radius').slice(0, -1));
 
         //Scroll Down

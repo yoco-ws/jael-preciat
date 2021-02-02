@@ -1,0 +1,7 @@
+{
+    "require": {
+        "delfimov/translate": "^2.6",
+        "psr/container": "^1.0",
+        "guzzlehttp/guzzle": "~6.0"
+    }
+}
