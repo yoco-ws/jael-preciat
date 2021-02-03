@@ -40,9 +40,9 @@
 								<img src="<?php echo RUTA; ?>img/jael_pic.png" alt="" class="img-fluid w-100" width="10" height="10">
 							</figure>
 							<main class="col-12 col-md-4 main-text">
-								<h3 class="h3">
+								<h1 class="h2 text-center text-md-left">
 									<?php echo $page['titulo_sec1'] ?>
-								</h3>
+								</h1>
 								<div class="mt-4 mt-md-0 font-base">
 									<?php echo $page['cuerpo_sec1'] ?>
 								</div>
