@@ -255,7 +255,7 @@ a:focus {
    }
 } 
 
-@media (max-width:767px) {
+@media (max-width:850px) {
 
 	::-webkit-scrollbar {
 	    width: 0px;
@@ -271,14 +271,14 @@ a:focus {
 			min-height: 60vh;
 			height: auto;
 
-			border-top-right-radius: 25%;
-			border-top-left-radius: 25%;
+			border-top-right-radius: 50%;
+			border-top-left-radius: 50%;
 		}
 
 		.background-square {
 			height: 200vh;
 
-			top: 50vh;
+			top: 60vh;
 		} 
 
 		&.first-slide {
@@ -406,7 +406,7 @@ a:focus {
 			height: 100%;
 
 			.main-text {
-				margin-top: -16rem;
+				margin-top: 10rem;
 				padding-top: 8rem;
 				text-align: center;
 
@@ -454,7 +454,7 @@ a:focus {
 
 				.h3, 
 				.font-base {
-					width: 75%;
+					width: 100%;
 					margin-left: auto;
 					margin-right: auto;
 				}
@@ -473,5 +473,32 @@ a:focus {
 		bottom: auto;
 	}
 	
+
+}
+
+@media (max-width:767px) { 
+	
+	.page-slide {
+		.background-round {
+			border-top-right-radius: 25%;
+			border-top-left-radius: 25%;
+		}
+
+		.background-square {
+			top: 50vh;
+		}
+
+		.content {
+
+			.main-text {
+				margin-top: -16rem;
+				.h3, 
+				.font-base {
+					width: 75%;
+				}
+			}
+		}
+	}
+
 
 }

@@ -1,7 +1,7 @@
 <?php 
 	require('vendor/autoload.php');
 
-	define('RUTA','http://localhost/jael-preciat/');
+	define('RUTA','http://localhost:8888/jael/');
 
 	$client = new GuzzleHttp\Client(['base_uri' => 'https://directus.cliqued.it/jael_preciat/']);
 

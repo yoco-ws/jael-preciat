@@ -134,14 +134,18 @@ a{
 	font-family: koch-antiqua-roman;
 }
 
-@media (max-width:767px) {
+@media (max-width:1024px) {
 	.main-name {
-		font-size: 5rem;
+		font-size: 8rem;
 	}
 
 	.h2, .h3 {
 		font-size: 3.4rem;
-		line-height: 1;
+		line-height: .8;
+	}
+
+	.font-base {
+		font-size: 1.4rem;
 	}
 
 	.anchor {
@@ -149,6 +153,19 @@ a{
 	}
 }
 
+@media (max-width:767px) {
+	.main-name {
+		font-size: 5rem;
+	}
+
+	.h2, .h3 {
+		line-height: 1;
+	}
+
+	.font-base {
+		font-size: 1.5rem;
+	}
+}
 
 
 //Typografías

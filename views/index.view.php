@@ -5,7 +5,7 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title> <?php echo $page['titulo'] ?> </title>
 
-		<meta property="og:url"                content="<?php echo $URL; ?>" />
+		<meta property="og:url"                content="<?php echo RUTA; ?>" />
 		<meta property="og:type"               content="website" />
 		<meta property="og:title"              content="<?php echo $page['titulo'] ?> " />
 		<meta property="og:description"        content="<?php echo $page['cuerpo'] ?>  " />
@@ -29,7 +29,7 @@
 				<div class="background-round">
 					<div class="content">
 						<div class="row name-container">
-							<div class="col-12 col-md-6 offset-md-3 text-center text-md-left animation-title">
+							<div class="col-10 col-md-6 offset-2 offset-md-3 text-center text-md-left animation-title">
 								<h1 class="main-name">
 									<?php echo $page['nombre'] ?>
 								</h1>
