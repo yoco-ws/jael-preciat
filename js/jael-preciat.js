@@ -3,7 +3,12 @@
 **/
 
 $(function() {
+
+    var title1 = $('#first-slide .h2');
     
+    if( isVisible( title1 ) && !title1.hasClass('active')) {
+        title1.addClass("active");
+    }
 });
 
 setTimeout(function(){
@@ -16,7 +21,7 @@ $("body").mousemove(function(e) {
     if( $(window).width() > 1024 ) {
         $(".animation-mouse").each(function(){
             var item = $(this);
-            if( esVisible(item) ){
+            if( isVisible(item) ){
                 //console.log("X Axis: " + e.clientX + ", Y Axis: " + e.clientY);
                 perspectiveAnimation( e.clientX, e.clientY, item );
             } else {
@@ -31,7 +36,7 @@ $("body").mousemove(function(e) {
 $(window).on('mouseout', function() {
     $(".animation-mouse").each(function(){
         var item = $(this);
-        if( esVisible(item) ){
+        if( isVisible(item) ){
             restartAnimation( item );
         }
     });
@@ -60,7 +65,7 @@ function perspectiveAnimation( x, y, item ) {
     //console.log("X Axis: " + x/width_step + ", Y Axis: " + y/height_step);
 }
 
-function esVisible(elem){
+function isVisible(elem){
     /* Ventana de Visualización*/
     var posTopView = $(window).scrollTop();
     var posButView = posTopView + $(window).height();
@@ -93,17 +98,38 @@ $(document).scroll(function() {
         scaleLayer( topScrollPosition, fourthSlide, lastScrollTop );
     }
 
-    lastScrollTop = topScrollPosition;
+    lastScrollTop = topScrollPosition
+
+    var title1 = $('#first-slide .h2');
+    var title2 = $('#second-slide .h2');
+    var title3 = $('#third-slide .h2');
+    var title4 = $('#fourth-slide .h2');
+
+    if( isVisible( title1 ) && !title1.hasClass('active')) {
+        title1.addClass("active");
+    }
+
+    if( isVisible( title2 ) && !title2.hasClass('active')) {
+        title2.addClass("active");
+    }
+
+    if( isVisible( title3 ) && !title3.hasClass('active')) {
+        title3.addClass("active");
+    }
+
+    if( isVisible( title4 ) && !title4.hasClass('active')) {
+        title4.addClass("active");
+    }
 });
 
 function scaleLayer( topScrollPosition, slide, lastScrollTop ){
-    var step = topScrollPosition / 3000;
-    var slidePosition = slide.offset().top + $(window).height();
+    var step = topScrollPosition / 700; //3000
+    var slidePosition = slide.offset().top; // + ($(window).height()*0);
 
-    var footerPosition = $(window).scrollTop() + $(window).height()
+    //var footerPosition = $(window).scrollTop() + $(window).height()
 
 
-    if ( topScrollPosition > slidePosition - 300 ) {
+    if ( topScrollPosition > slidePosition ) {
         borderRadius = parseFloat(slide.children(".background-round").css('border-top-right-radius').slice(0, -1));
 
         //Scroll Down

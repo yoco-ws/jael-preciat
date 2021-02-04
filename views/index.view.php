@@ -41,7 +41,7 @@
 							</figure>
 							<main class="col-12 col-md-4 main-text">
 								<h1 class="h2 text-center text-md-left">
-									<?php echo $page['titulo_sec1'] ?>
+									<span><?php echo $page['titulo_sec1'] ?></span>
 								</h1>
 								<div class="mt-4 mt-md-0 font-base">
 									<?php echo $page['cuerpo_sec1'] ?>
@@ -69,7 +69,7 @@
 						<div class="row mb-4">
 							<div class="col-12 col-md-6 px-5 px-md-4 mx-auto">
 								<h2 class="h2">
-										<?php echo $page['titulo_sec2'] ?>
+									<span><?php echo $page['titulo_sec2'] ?></span>
 								</h2>
 							</div>
 						</div>
@@ -99,7 +99,7 @@
 						<div class="row">
 							<div class="col-9 col-md-5 mx-auto mt-3">
 								<h2 class="h2 white">
-									<?php echo $page['titulo_sec3'] ?>
+									<span><?php echo $page['titulo_sec3'] ?></span>
 								</h2>
 							</div>
 						</div>
@@ -122,7 +122,7 @@
 					<div class="row">
 						<div class="col-11 col-md-6 mx-auto mb-5">
 							<h2 class="h2">
-								<?php echo $page['titulo_sec4'] ?>
+								<span><?php echo $page['titulo_sec4'] ?></span>
 							</h2>
 						</div>
 					</div>
