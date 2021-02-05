@@ -30,14 +30,14 @@
 					<div class="content">
 						<div class="row name-container">
 							<div class="col-10 col-md-6 offset-2 offset-md-3 text-center text-md-left animation-title">
-								<h1 class="main-name">
+								<h1 class="main-name text-center">
 									<?php echo $page['nombre'] ?>
 								</h1>
 							</div>
 						</div>
 						<div class="row">
 							<figure class="col-12 col-md-7">
-								<img src="<?php echo RUTA; ?>img/jael_pic.png" alt="" class="img-fluid w-100" width="10" height="10">
+								<img src="<?php echo RUTA; ?>img/jael_pic.jpg" alt="" class="img-fluid w-100" width="10" height="10">
 							</figure>
 							<main class="col-12 col-md-4 main-text">
 								<h1 class="h2 text-center text-md-left">
@@ -46,7 +46,7 @@
 								<div class="mt-4 mt-md-0 font-base">
 									<?php echo $page['cuerpo_sec1'] ?>
 								</div>
-								<a href="#" class="anchor">
+								<a href="<?php echo $page['link_del_ancla'] ?>" target="_blank" class="anchor">
 									<?php echo $page['texto_del_ancla'] ?>
 								</a>
 
@@ -81,7 +81,7 @@
 							</div>
 							<div class="col-10 col-md-3 mx-auto mr-md-auto offset-md-1 people-connected-animation animation-mouse" id="people-connected-animation">
 								<img src=" <?php echo $page['imagen_sec2']['data']['full_url'] ?> " alt="" class="img-fluid first-layer">
-								<img src=" <?php echo $page['imagen2_sec2']['data']['full_url'] ?> " alt="" class="img-fluid second-layer">
+								<!--<img src=" <?php echo $page['imagen2_sec2']['data']['full_url'] ?> " alt="" class="img-fluid second-layer">-->
 							</div>
 						</div>
 					</div>
@@ -92,7 +92,7 @@
 				<div class="background-round">
 					<div class="content">
 						<div class="row">
-							<div class="col-12 col-md-4 mx-auto mb-5 d-none d-md-block">
+							<div class="col-8 col-md-4 mx-auto mb-5">
 								<img src="<?php echo RUTA; ?>img/sol.svg" alt="" class="img-fluid w-100">
 							</div>
 						</div>
@@ -120,19 +120,21 @@
 				<div class="background-square"></div>
 				<div class="content">
 					<div class="row">
-						<div class="col-11 col-md-6 mx-auto mb-5">
-							<h2 class="h2">
-								<span><?php echo $page['titulo_sec4'] ?></span>
-							</h2>
-						</div>
-					</div>
-					<div class="row align-items-end">
-						<div class="col-11 col-md-4 mx-auto ml-md-auto mr-md-0 mb-5 px-md-5">
-							<div class="font-base">
-								<?php echo $page['cuerpo_sec4'] ?>
+						<div class="col-11 col-md-7 mx-auto">
+							<div class="row align-items-end">
+								<div class="col-11 order-2 order-md-1 mx-auto mb-5">
+									<h2 class="h2">
+										<span><?php echo $page['titulo_sec4'] ?></span>
+									</h2>
+								</div>
+								<div class="col-11 col-md-7 order-2 order-md-3 mx-auto mb-5 px-md-5">
+									<div class="font-base text-center text-md-left">
+										<?php echo $page['cuerpo_sec4'] ?>
+									</div>
+								</div>
+								<div class="col-8 col-md-5 order-1 order-md-3 mx-auto mb-5 mb-md-0 lottie-animation" data-animation-name="jaels-cup" data-loop="-1" speed="1">
+								</div>
 							</div>
-						</div>
-						<div class="col-11 col-md-3 mx-auto ml-md-0 mr-md-auto lottie-animation" data-animation-name="jaels-cup" data-loop="-1" speed="1">
 						</div>
 					</div>
 					<div class="row list-content">

@@ -88,7 +88,7 @@ a:focus {
 		}
 
 		.background-round {
-			margin-top: -15rem;
+			margin-top: -8rem;
 		}
 
 		.content {
@@ -290,6 +290,10 @@ a:focus {
 				margin-left: -5%;
 			}
 
+			.content {
+				margin-top: -5rem;
+			}
+
 		}
 
 		&.second-slide,
@@ -392,7 +396,7 @@ a:focus {
 			}
 
 			.content {
-				padding-top: 12rem;
+				padding-top: 0rem;
 				padding-bottom: 5rem;
 			}
 
@@ -458,12 +462,19 @@ a:focus {
 					margin-left: auto;
 					margin-right: auto;
 				}
+
+				.h2 {
+					width: 80%;
+					margin-left: auto;
+					margin-right: auto;
+				}
 			}
 		}
 	}
 
 	.name-container {
-		top: 17.8rem;
+		position: relative;
+		top: auto;
 		text-decoration: center;
 	}
 
@@ -491,7 +502,7 @@ a:focus {
 		.content {
 
 			.main-text {
-				margin-top: -16rem;
+				margin-top: -10rem;
 				.h3, 
 				.font-base {
 					width: 75%;

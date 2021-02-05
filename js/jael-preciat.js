@@ -123,8 +123,8 @@ $(document).scroll(function() {
 });
 
 function scaleLayer( topScrollPosition, slide, lastScrollTop ){
-    var step = topScrollPosition / 700; //3000
-    var slidePosition = slide.offset().top; // + ($(window).height()*0);
+    var step = topScrollPosition / 3000;
+    var slidePosition = slide.offset().top + $(window).height();
 
     //var footerPosition = $(window).scrollTop() + $(window).height()
 
