@@ -411,7 +411,7 @@ a:focus {
 
 			.main-text {
 				margin-top: 10rem;
-				padding-top: 8rem;
+				padding-top: 12rem;
 				text-align: center;
 
 				&:before,
@@ -473,8 +473,8 @@ a:focus {
 	}
 
 	.name-container {
-		position: relative;
-		top: auto;
+		position: absolute;
+		top: 4rem;
 		text-decoration: center;
 	}
 
