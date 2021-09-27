@@ -23,9 +23,163 @@ a:focus {
 	outline: none;
 }
 
-//Fondos partículares
+body{
+	background-color: #0D0D0D;
+}
+
+section.predecimos{
+	background-color: #0D0D0D;
+	padding-top: 28rem;
+	padding-bottom: 15rem;
+	position: relative;
+	
+	img.imgbg{
+		position: absolute;
+		top: 15.4rem;
+	}
+
+	h1{
+		padding-left: 2rem;
+		font-size: 6.4rem;
+	}
+	.parrafo{
+		position: relative;
+		margin-top: 9rem;
+		margin-left: 4rem;
+
+		&:after{
+			content: "";
+			width: 1px;
+			height: 100%;
+			background: $green;
+			position: absolute;
+			top: 0;
+			left: -2rem;
+		}
+	}
+}
+
+section.about{
+	background-color: #0D0D0D;
+	padding-bottom: 8.3em;
+	.box{
+		background-color: rgba(174, 174, 174, 0.2);
+		padding: 8rem 0 7.9rem 0rem;
+		
+
+		.jael-anim{
+			position: absolute;
+			bottom: -5px;
+			left: 0;
+			margin-bottom: 0rem;
+
+			max-width: 41.666667%;
+		}
+
+		.content{
+			flex: 0 0 39.99%;
+    		max-width: 39.99%;
+			margin-left: 47.666667%;
+			h1{
+				font-size: 2.8rem;
+			}
+			h2{
+				font-size: 2.4rem;
+			}
+			.block{
+				position: relative;
+				margin-top: 9.9rem;
+
+				.circulo{
+					width: 50px;
+					height: 50px;
+					position: absolute;
+					left: -16px;
+					top: 10px;
+				}
+			}
+			.block:first-child{
+				margin-top: 5.2rem;
+			}
+		}
+		
+	}
+}
 
 
+section.agendar{
+	background: #0D0D0D;
+	position: relative;
+
+	.linea-anim{
+		position: absolute;
+		right: 0;
+		top: 138px;
+	}
+	.box{
+		flex: 0 0 97%;
+		max-width: 97%;
+		padding: 13rem 0 18.5rem 0;
+		background-image: url("../img/bg-green.jpg");
+		background-size: cover;
+
+		h1{
+			font-size: 4.4rem;
+		}
+	}
+}
+
+
+section.media{
+	padding-bottom: 14.7rem;
+	position: relative;
+	top: -5.8rem;
+
+	.redes{
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: wrap;
+		.lottie-animation{
+			width: 126px;
+		}
+		.title-box{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 50px;
+			max-height: 50px;
+			margin-bottom: 16px;
+			margin-top: 2.5rem;
+			h1{
+				font-size: 18px;
+				p{
+					margin-bottom: 0;
+					
+				}
+				
+			}
+		}
+		
+		h2{
+			font-size: 16px;
+		}
+		a{
+			font-family: cour;
+			font-size: 16px;
+			color: #AEAEAE;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+
+footer.footer{
+	padding: 6.4rem 0 12.1rem 0 ;
+}
 
 //Estilos particulares
 

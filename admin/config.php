@@ -1,10 +1,11 @@
 <?php 
 
 
-	define('RUTA','http://localhost/');
+	define('RUTA','http://localhost/jael-preciat/');
 
 
-
+	$lottie_js = "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.8/lottie.min.js\" integrity=\"sha256-QWuFU4W0oiKnJa3GVz5Z+pNf91eTYdmHogcIeJpWON0=\" crossorigin=\"anonymous\"></script>";
+	#JS
 	$favicon = "<link rel='icon' type='image/png' href='img/favicon.png' />";
 
 	#CSS
@@ -28,9 +29,9 @@
 
 	#Own 
 	#	js
-		$own_file_js = '<script src="'.RUTA.'js/example.js"></script>';
+		$own_file_js = '<script src="'.RUTA.'js/jael-preciat.js"></script>';
 	#	css
-		$own_file_css = '<link rel="stylesheet" href="'.RUTA.'css/example.min.css">';
+		$own_file_css = '<link rel="stylesheet" href="'.RUTA.'css/jael-preciat.min.css">';
 	
 
 	#Extra

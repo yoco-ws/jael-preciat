@@ -4,8 +4,47 @@
 	
 	//Estílos particulares
 
+	section.about{
+		padding-bottom: 8.3em;
+		.box{
+			padding: 4rem 0 4.9rem 0rem;
+			
 	
+			.jael-anim{
+				bottom: -5px;
+				left: 0;
+				margin-bottom: 0rem;
+	
+				max-width: 41.666667%;
+			}
+	
+			.content{
+				flex: 0 0 50%;
+				max-width: 50%;
+				margin-left: 47.666667%;
+				h1{
+					font-size: 2.2rem;
+				}
+				h2{
+					font-size: 1.9rem;
+				}
+				.block{
+					margin-top: 7.9rem;
+	
+					.circulo{
+						width: 50px;
+						height: 50px;
+						left: -16px;
+						top: 10px;
+					}
+				}
+				.block:first-child{
+					margin-top: 3.2rem;
+				}
+			}
+			
+		}
+	}
 
-	//Fondos particulares
 
 }

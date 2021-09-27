@@ -6,27 +6,110 @@
 	color: #fff!important;
 }
 
+
+$green: #00AC99;
+$gray: #E9E6E5;
+$dark-gray: #AEAEAE;
+
+.txt-green{
+	color: #00AC99;
+}
+.txt-gray{
+	color: #E9E6E5;
+}
+.txt-dark-gray{
+	color: #AEAEAE;
+}
 //Tamaños de tipografías
 
-.title{
 
+i{
+	font-family: montserrat-medium-italic !important;
+}
+b,strong{
+	font-family: cour-bold !important;
 }
 
-.paragraph{
 
+.paragraph{
+	font-family: cour;
+	font-size: 16px;
+	line-height: 24px;
+	
+	&.v2{
+		font-size: 1.8rem;
+	}
+}
+
+.line-height-18{
+	line-height: 18px;
 }
 
 .button{
+	padding: 13px 7.5rem 14px 7.5rem;
+	border: 1.5px solid $green;
+	color: $green;
+	background-color: transparent;
+	font-family: cour;
+	font-size: 18px;
+	transition:0.2s;
 
-}
+
+	&:hover{
+		background-color: black;
+		color: white;
+		border-color: black;
+		text-decoration: none;
+	}
+}	
 
 
 
 @font-face{
-	font-family: name-font; 
-	src: url("../fonts/own-fonts/name-file-font.ext");
+	font-family: cour; 
+	src: url("../fonts/own-fonts/COUR.TTF");
 }
 
-.name-font {
-	font-family: name-font;
+@font-face{
+	font-family: cour-bold; 
+	src: url("../fonts/own-fonts/COURBD.TTF");
+}
+
+@font-face{
+	font-family: montserrat; 
+	src: url("../fonts/own-fonts/Montserrat-Regular.ttf");
+}
+
+@font-face{
+	font-family: montserrat-medium; 
+	src: url("../fonts/own-fonts/Montserrat-Medium.ttf");
+}
+
+@font-face{
+	font-family: montserrat-medium-italic; 
+	src: url("../fonts/own-fonts/Montserrat-MediumItalic.ttf");
+}
+
+@font-face{
+	font-family: montserrat-semibold; 
+	src: url("../fonts/own-fonts/Montserrat-SemiBold.ttf");
+}
+
+.cour{
+	font-family: cour !important;
+}
+.cour-bold{
+	font-family: cour-bold !important;
+}
+.montserrat{
+	font-family: montserrat !important;
+}
+.montserrat-medium{
+	font-family: montserrat-medium !important;
+}
+.montserrat-medium-italic{
+	font-family: montserrat-medium-italic !important;
+}
+.montserrat-semibold{
+	font-family: montserrat-semibold !important;
 }
