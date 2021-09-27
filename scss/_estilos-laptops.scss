@@ -1,49 +1,16 @@
-@media screen and (min-width:851px) and (max-width: 1200px) {
+@media screen and 
+(min-width:1024px) {
 
-	.page-slide{
-
-		&.first-slide {
-			.background-round {
-
-				.main-text {
-					margin-top: 30rem;
-				}
-			}
-		}
-		&.second-slide {
-			margin-top: -20vw;
-		}
-
-		&.third-slide {
-			margin-top: -15vw;
-		}
-
-		&.fourth-slide {
-			margin-top: -25vw;
-		}
+	body, html {
+		font-size: 10px;
 	}
 
-}
+	//Estilos partículares
 
-@media screen and (min-width:1201px) and (max-width: 1365px) {
-	.page-slide {
-		&.first-slide {
-			.background-round {
-
-				.main-text {
-					margin-top: 30rem;
-				}
-			}
-		}
-
-		&.third-slide {
-			margin-top: -30vw;
-		}
-	}
 }
 
 //and (max-device-width: 1600px)
 @media screen and 
-(max-width:1200px) {	
+(min-width:1200px) {	
 
 }

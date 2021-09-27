@@ -6,218 +6,27 @@
 	color: #fff!important;
 }
 
-//Colors
-$first_layer_color: #fff6f3;
-$second_layer_color: #ECDDD7;
-$third_layer_color: #000;
-$dark_red: #441915;
-$black: #000;
-
 //Tamaños de tipografías
-.main-name,
-.h2, .h3 {
-	font-family: koch-antiqua-roman;
-}
-.main-name {
-	color: white;
-	font-size: 13rem;
+
+.title{
+
 }
 
-.h2, .h3, .h6 {
-	color: $dark_red;
+.paragraph{
 
-	&.white {
-		color: white;
-	}
 }
 
-.h2 {
-	line-height: .9;
-	text-align: center;
-	font-size: 5rem;
+.button{
 
-	position: relative;
-	overflow: hidden;
-
-	span {
-		display: block;
-		transform: translate(0%, 140%) matrix3d(0.996195, 0.0871557, 0, 0, -0.0871557, 0.996195, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-		opacity: 1;
-		transition: .8s;
-	}
-	
-
-	&.active span {
-		transition-delay: .5s;
-		transform: translate3d(0px, 0px, 0px);
-	}
 }
 
-.h3 {
-	font-size: 4rem;
-}
-
-.h6, .font-base {
-	font-family: rubik-light;
-
-	* {
-		font-family: inherit;
-	}
-}
-
-.h6 {
-	text-align: center;
-	font-size: 1.5rem;
-}
-
-.font-base {
-	color: $black!important;
-	font-size: 1.6rem;
-
-	strong,b{
-		font-weight: normal;
-		font-family: rubik-bold !important;
-	}
-	&.white {
-		color: white!important;
-	}
-	a{
-		&:hover{
-			color: white !important;
-		}
-	}
-
-	* {
-		color: inherit;
-	}
-
-	a {
-		text-decoration: underline;
-		color: inherit;
-	}
-}
-
-.anchor {
-	color: $black!important;
-	text-transform: uppercase;
-
-	text-decoration: underline;
-
-	font-size: 1.8rem;
-	font-family: rubik-light;
-
-	transition-duration: .5s;
-
-	&:hover,
-	&:focus {
-		color: #43191A !important;
-	}
-}
-
-a{
-
-	&:hover,
-	&:focus {
-		color: #43191A !important;
-	}
-}
-
-.icon-card {
-	.text,
-	.list-data {
-		text-align: center;
-		color: $black!important;
-		font-family: rubik-light;
-
-		* {
-			color: inherit;
-		}
-	}
-
-	.text {
-		font-size: 1.8rem;
-	}
-
-	.list-data {
-		font-size: 1.5rem;
-		text-decoration: underline;
-	}
-}
-
-.footer span {
-	color: white;
-	font-size: 3.5rem; 
-	font-family: koch-antiqua-roman;
-}
-
-@media (max-width:1024px) {
-	.main-name {
-		font-size: 8rem;
-	}
-
-	.h2, .h3 {
-		font-size: 3.4rem;
-		line-height: .8;
-	}
-
-	.font-base {
-		font-size: 1.4rem;
-	}
-
-	.anchor {
-		font-size: 1.6rem;
-	}
-}
-
-@media (max-width:767px) {
-	.main-name {
-		font-size: 5rem;
-	}
-
-	.h2, .h3 {
-		line-height: 1;
-	}
-
-	.font-base {
-		font-size: 1.5rem;
-	}
-}
-
-
-//Typografías
-@font-face{
-	font-family: rubik-bold; 
-	src: url("../fonts/own-fonts/Rubik-Medium.ttf");
-}
-
-.rubik-bold {
-	font-family: rubik-bold;
-}
 
 
 @font-face{
-	font-family: koch-antiqua-roman; 
-	src: url("../fonts/own-fonts/koch-antiqua-roman.woff");
+	font-family: name-font; 
+	src: url("../fonts/own-fonts/name-file-font.ext");
 }
 
-.koch-antiqua-roman {
-	font-family: koch-antiqua-roman;
-}
-
-@font-face{
-	font-family: rubik-regular; 
-	src: url("../fonts/own-fonts/Rubik-VariableFont_wght.ttf");
-}
-
-.rubik-regular {
-	font-family: rubik-regular;
-}
-
-@font-face{
-	font-family: rubik-light; 
-	src: url("../fonts/own-fonts/Rubik-Light.ttf");
-}
-
-.rubik-light {
-	font-family: rubik-light;
+.name-font {
+	font-family: name-font;
 }
