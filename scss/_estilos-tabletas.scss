@@ -3,8 +3,56 @@
 (min-width:768px) {
 	
 	//Estílos particulares
+	.logo-header{
+		width:  186.6px;
+		top: 4rem;
+		left: 8rem;
+	}
 
-	section.about{
+	.icons{
+		top: 4rem;
+		right: 2rem;
+	}
+
+	section.intro{
+		padding-top: 0rem;
+		background-image: url("../img/banner_intro.png");
+		background-position: 99% 0.9rem;
+		background-size: 111rem;
+		padding-top: 11.9rem;
+		padding-bottom: 10rem;
+
+		.float-logo{
+			position: absolute;
+			top: 6.3rem;
+			margin-left: 8.333333%;
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+	
+		.content{
+			margin-top: 7rem;
+	
+			.form{
+				margin-top: 0rem;
+				flex: 0 0 80%;
+				max-width: 80%;
+			}
+			h1{
+				font-size: 9.6rem;
+				line-height: 9.9rem;
+			}
+			h2{
+				margin-top: 2rem;
+			}
+			.body-intro{
+				margin-top: 3rem;
+			}
+		}
+	}
+
+
+	section.about{	
 		padding-bottom: 8.3em;
 		.box{
 			padding: 4rem 0 4.9rem 0rem;
@@ -46,5 +94,138 @@
 		}
 	}
 
+	section.predecimos{
+		padding-top: 28rem;
+		padding-bottom: 15rem;
+		
+		h1{
+			padding-left: 2rem;
+			font-size: 6.4rem;
+		}
+		.parrafo{
+			margin-top: 9rem;
+			margin-left: 4rem;
+	
+			&:after{
+				left: -2rem;
+			}
+			
+		}
+
+	}
+
+	section.about{
+		.box{
+			flex: 0 0 91.666667%;
+			max-width: 91.666667%;
+			padding: 8rem 0 7.9rem 0rem;
+	
+			.jael-anim{
+				bottom: -5px;
+				top: unset;
+				max-width: 41.666667%;
+			}
+	
+			.content{
+				flex: 0 0 39.99%;
+				max-width: 39.99%;
+				margin-left: 47.666667%;
+				h1{
+					font-size: 2.8rem;
+				}
+				h2{
+					font-size: 2.4rem;
+				}
+				.block{
+					margin-top: 9.9rem;
+	
+					.circulo{
+						width: 50px;
+						height: 50px;
+						left: -16px;
+						top: 10px;
+					}
+					p{
+						margin-top: 0;
+					}
+				}
+				.block:first-child{
+					margin-top: 5.2rem;
+				}
+			}
+		}
+	}
+
+
+	section.agendar{
+		z-index: 4;
+		
+		.lineas-bottom{
+			bottom: -5px;
+			left: 0;
+		}
+		.linea-anim{
+			right: 0;
+			top: 138px;
+			z-index: 10;
+		}
+		.box{
+			flex: 0 0 97%;
+			max-width: 97%;
+			padding: 13rem 0 18.5rem 0;
+	
+			h1{
+				font-size: 4.4rem;
+			}
+		}
+	}
+
+
+	.row.media{
+		z-index: 6;
+		padding-bottom: 14.7rem;
+		top: -5.8rem;
+	
+	
+		.redes{
+			margin-bottom: 0rem;
+			.lottie-animation{
+				width: 126px;
+			}
+			.title-box{
+				min-height: 50px;
+				max-height: 50px;
+				margin-bottom: 16px;
+				margin-top: 2.5rem;
+				
+			}
+			
+			h2{
+				font-size: 16px;
+			}
+			a{
+				font-size: 16px;
+			}
+		}
+	}
+
+	footer.footer{
+		padding: 6.4rem 0 12.1rem 0 ;
+		
+		.row-blocks{
+			margin-top: 7.2rem;
+		}
+
+		.paragraph:not(:last-child){
+			margin-bottom: 0rem;
+		}
+	
+		.aviso-de-privacidad{
+			margin-top: 6.3rem;
+			a{
+				font-size: 12px;
+			}
+		}
+	}
 
 }

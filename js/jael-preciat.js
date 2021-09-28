@@ -50,3 +50,36 @@ function isInViewPort ( element ) {
     var viewportBottom = viewportTop + $(window).height() ;
     return elementBottom > viewportTop && elementTop < viewportBottom;
 }
+
+
+
+$(document).ready(function(){
+    if ( $(window).scrollTop() > $intro ) {
+        $(".cover").addClass("dark");
+        $(".predecimos").addClass("active");
+
+    }else{
+        $(".cover").removeClass("dark"); 
+        $(".predecimos").removeClass("active");         
+    }
+});
+
+$(window).on('scroll', function(){
+    $intro = $(".intro").innerHeight() ;
+
+    if ( $(window).scrollTop() > $intro - 300 ) {
+        $(".cover").addClass("dark");
+        $(".predecimos").addClass("active");
+
+    }else{
+        $(".cover").removeClass("dark"); 
+        $(".predecimos").removeClass("active");         
+    }
+
+    if ( $(window).scrollTop() > $intro-100 ) {
+        $(".item-nav").addClass("active");
+    }else{
+        $(".item-nav").removeClass("active");
+    }
+
+});

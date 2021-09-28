@@ -31,11 +31,41 @@
 
 		<?php require("views/navbar.view.php"); ?>
 
+		<div class="cover"></div>
 
 		<section class="intro">
 			<div class="container-fluid">
+				<div class="float-logo">
+					<img src="<?=RUTA?>sprites/Logosobreblanco.svg" alt="" class='img-fluid'>
+				</div>
 				<div class="row">
-					
+					<div class="col-md-8 col-lg-6 col-xl-4 content offset-md-1">
+						<h1 class='montserrat-medium txt-green'>Business Coach</h1>
+
+						<div class="form">
+							<div class="paragraph body-intro line-height-18">
+								<p>Acompaño a las personas y organizaciones a encontrar aquello que detona su máximo potencial.</p>
+							</div>
+
+							<h2 class='txt-green cour-bold paragraph line-height-18'>¿Listx para detonar tu energía creadora?</h2>
+
+							<form action="">
+								<div class="form-group line-bottom">
+									<input type="text" name="name" placeholder="Nombre completo">
+								</div>
+
+								<div class="form-group line-bottom">
+									<input type="email" name="email" placeholder="Correo electrónico">
+								</div>
+
+
+								<div class="form-bottom mt-5 mt-md-0">
+									<button class='button small' type="submit"> Vamos a comunicarnos </button>
+								</div>
+							</form>
+
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -46,7 +76,7 @@
 					<img src="<?=RUTA?>img/predecimos.jpg" alt="" class='imgbg'>
 					
 					<div class="col-xl-4 col-md-5 offset-md-1">
-						<h1 class='montserrat-semibold text-right txt-green'>Predecimos el futuro</h1>
+						<h1 class='montserrat-semibold text-md-right txt-green'>Predecimos el futuro</h1>
 					</div>
 
 					<div class="col-md-5 parrafo">
@@ -68,9 +98,11 @@
 		<section class="about">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-11 box ml-md-auto">
+					<div class=" box ml-md-auto">
 						<div class="row">
 							<div class="lottie-animation jael-anim " autoplay="true" data-animation-name="Jael" data-loop="0" > </div>
+
+
 							<div class=" content">
 								<h1 class='montserrat-medium txt-dark-gray pr-2'>Encontramos futuros potenciales en los que podrías no saber qué hacer <span style="color: #FFFFFF;">y vamos creando rutas para llevarlas a cabo.</span></h1>
 
@@ -102,7 +134,7 @@
 				<div class="row">
 					<div class=" box">
 						<div class="row">
-							<div class="col-md-5 offset-md-2 ">
+							<div class="col-xl-5 col-lg-7 col-md-8 offset-md-1 ">
 								<h1 class='txt-green montserrat-medium'>¿Estás listo para hacer lo que haga falta?</h1>
 
 								<p class='paragraph txt-gray v2 mb-5'>Conectemos</p>
@@ -113,16 +145,12 @@
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
 
-		<section class="media">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-8 mx-auto">
-						<div class="row">
-							<div class="col-md-3 redes">
-								<div class="lottie-animation  " autoplay="true" data-animation-name="Inspiracion" data-loop="0" > </div>
+				<div class="row media">
+					<div class="col-md-12 col-lg-10 col-xl-8 mx-auto">
+						<div class="row justify-content-center">
+							<div class="col-md-3 col-7 redes">
+								<div class="lottie-animation  " autoplay="true" data-animation-name="EODC" data-loop="0" > </div>
 
 								<div class="title-box">
 									<h1 class='txt-gray montserrat-medium'><p>Conoce mi <i>Business Coffee</i></p></h1>
@@ -134,8 +162,8 @@
 								<a href="">Menú</a>
 							</div>
 
-							<div class="col-md-3 redes">
-								<div class="lottie-animation  " autoplay="true" data-animation-name="Inspiracion" data-loop="0" > </div>
+							<div class="col-md-3 col-7 redes">
+								<div class="lottie-animation  " autoplay="true" data-animation-name="unamos-puntos" data-loop="0" > </div>
 
 								<div class="title-box">
 									<h1 class='txt-gray montserrat-medium'><p>Unamos puntos</p></h1>
@@ -147,7 +175,7 @@
 								<a href="">Podcast</a>
 							</div>
 
-							<div class="col-md-3 redes">
+							<div class="col-md-3 col-7 redes">
 								<div class="lottie-animation  " autoplay="true" data-animation-name="Inspiracion" data-loop="0" > </div>
 
 								<div class="title-box">
@@ -158,7 +186,7 @@
 								<a href="">@jaelpreciat</a>
 							</div>
 
-							<div class="col-md-3 redes">
+							<div class="col-md-3 col-7 redes">
 								<div class="lottie-animation  " autoplay="true" data-animation-name="Telefono" data-loop="0" > </div>
 
 								<div class="title-box">
@@ -166,13 +194,15 @@
 								</div>
 
 								<h2 class='txt-green cour'><p>Agenda una cita</p></h2>
-								<a href="">Reserva la sala</a>
+								<a href="">WhatsApp</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="lottie-animation lineas-bottom " autoplay="true" data-animation-name="linea-verde-izq" data-loop="0" > </div>
 		</section>
+		
 
 
 		<?php require("views/footer.view.php"); ?>	

@@ -23,29 +23,65 @@ a:focus {
 	outline: none;
 }
 
-body{
-	background-color: #0D0D0D;
+.item-nav{
+	opacity: 0;
+	transition: .1s ease;
+	&.active{
+		opacity: 1;
+	}
+}
+.cover{
+	position: fixed;
+	top: 0; left: 0; right: 0; bottom: 0;
+	background-color: #ECECEC;
+	z-index: 0;
+	transition: .3s ease;
+	&.dark{
+		background-color: #0D0D0D;
+	}
+}
+
+.logo-header{
+	width:  155px;
+	height: auto;
+	position: fixed;
+	top: 2rem;
+	left: 1rem;
+	z-index: 5;
+}
+
+.icons{
+	position: fixed;
+	top: 2rem;
+	right: 1rem;
+	z-index: 5;
 }
 
 section.predecimos{
-	background-color: #0D0D0D;
-	padding-top: 28rem;
-	padding-bottom: 15rem;
+	opacity: 0;
+	background-color: transparent;
+	padding-top: 16.9rem;
+	padding-bottom: 13rem;
 	position: relative;
-	
+	transition: .1s ease;
+	transition-delay: .0s;
+	&.active{
+		opacity: 1;
+		transition-delay: .2s;
+	}
 	img.imgbg{
 		position: absolute;
 		top: 15.4rem;
 	}
 
 	h1{
-		padding-left: 2rem;
-		font-size: 6.4rem;
+		padding-right: 2rem;
+		font-size: 5.2rem;
 	}
 	.parrafo{
 		position: relative;
-		margin-top: 9rem;
-		margin-left: 4rem;
+		margin-top: 6rem;
+		margin-left: 2rem;
 
 		&:after{
 			content: "";
@@ -54,85 +90,100 @@ section.predecimos{
 			background: $green;
 			position: absolute;
 			top: 0;
-			left: -2rem;
+			left: 0rem;
 		}
 	}
 }
 
 section.about{
-	background-color: #0D0D0D;
+	position: relative;
+	background-color: transparent;
 	padding-bottom: 8.3em;
 	.box{
+		position: relative;
 		background-color: rgba(174, 174, 174, 0.2);
-		padding: 8rem 0 7.9rem 0rem;
-		
+		padding: 0rem 0 7.9rem 0rem;
+		flex: 0 0 94.666667%;
+		max-width: 94.666667%;
+		margin-left: auto;
+		padding: 0 15px;
 
 		.jael-anim{
-			position: absolute;
-			bottom: -5px;
+			position: relative;
+			top: -3rem;
 			left: 0;
 			margin-bottom: 0rem;
-
-			max-width: 41.666667%;
+			max-width: 100%;
 		}
 
 		.content{
-			flex: 0 0 39.99%;
-    		max-width: 39.99%;
-			margin-left: 47.666667%;
+			flex: 0 0 91%;
+    		max-width: 91%;
+			margin: 0 auto;
 			h1{
-				font-size: 2.8rem;
+				font-size: 2.4rem;
 			}
 			h2{
-				font-size: 2.4rem;
+				font-size: 2rem;
 			}
 			.block{
 				position: relative;
-				margin-top: 9.9rem;
+				margin-top: 4rem;
 
 				.circulo{
-					width: 50px;
-					height: 50px;
+					width: 34px;
+					height: 34px;
 					position: absolute;
-					left: -16px;
-					top: 10px;
+					left: 0px;
+					top: 15px;
+				}
+				p{
+					margin-top: 1rem;
 				}
 			}
 			.block:first-child{
-				margin-top: 5.2rem;
+				margin-top: 4.4rem;
 			}
 		}
-		
 	}
 }
 
-
 section.agendar{
-	background: #0D0D0D;
+	z-index: 4;
+	background: transparent;
 	position: relative;
 
-	.linea-anim{
+	.lineas-bottom{
 		position: absolute;
-		right: 0;
-		top: 138px;
+		bottom: -5px;
+		left: -32rem;
+	}
+	.linea-anim{
+	    position: absolute;
+		bottom: -26rem;
+		right: -8rem;
+		top: unset;
+		z-index: 10;
 	}
 	.box{
-		flex: 0 0 97%;
-		max-width: 97%;
-		padding: 13rem 0 18.5rem 0;
+		
+		flex: 0 0 95%;
+		max-width: 95%;
+		padding: 13rem 15px 18.5rem 15px;
 		background-image: url("../img/bg-green.jpg");
 		background-size: cover;
 
 		h1{
-			font-size: 4.4rem;
+			font-size: 2.8rem;
 		}
 	}
 }
 
-
-section.media{
-	padding-bottom: 14.7rem;
+.row.media{
+	z-index: 6;
+	padding-bottom: 6rem;
 	position: relative;
+	//background-color: #0D0D0D;
 	top: -5.8rem;
 
 	.redes{
@@ -141,6 +192,7 @@ section.media{
 		flex-direction: column;
 		align-items: center;
 		flex-wrap: wrap;
+		margin-bottom: 6rem;
 		.lottie-animation{
 			width: 126px;
 		}
@@ -156,14 +208,15 @@ section.media{
 				font-size: 18px;
 				p{
 					margin-bottom: 0;
-					
 				}
-				
 			}
 		}
 		
 		h2{
 			font-size: 16px;
+			p{
+				margin-bottom: 0;
+			}
 		}
 		a{
 			font-family: cour;
@@ -176,10 +229,74 @@ section.media{
 	}
 }
 
-
 footer.footer{
-	padding: 6.4rem 0 12.1rem 0 ;
+	padding: 6.4rem 0 7.2rem 0 ;
+	background-color: #000000;
+	position: relative;
+	z-index: 15;
+
+	.row-blocks{
+		margin-top: 7.2rem;
+	}
+
+	.paragraph:not(:last-child){
+		margin-bottom: 3.6rem;
+	}
+
+	.aviso-de-privacidad{
+		margin-top: 6.3rem;
+		a{
+			font-family: cour;
+			font-size: 12px;
+			color: $dark-gray;
+		}
+	}
 }
+
+section.intro{
+	padding-top: 4.8rem;
+	padding-bottom: 10.1rem;
+	background-image: url("../img/banner_intro_movil.png");
+	background-repeat: no-repeat;
+    background-position: 86% 26rem;
+    background-size: contain;
+
+	z-index: 6;
+	background-color: transparent;
+	position: relative;
+
+	.float-logo{
+		position: relative;
+		padding-right: 15px;
+		padding-left: 15px;
+		display: flex;
+		justify-content: center;
+		
+	}
+
+	.content{
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 1.9rem;
+
+		.form{
+			margin-top: 20.6rem;
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+		h1{
+			font-size: 7.2rem;
+			line-height: 6.2rem;
+		}
+		h2{
+			margin-top: 2rem;
+		}
+		.body-intro{
+			margin-top: 3rem;
+		}
+	}
+}
+
 
 //Estilos particulares
 

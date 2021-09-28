@@ -1,7 +1,9 @@
 <?php 
 
 
-	define('RUTA','http://localhost/jael-preciat/');
+	//define('RUTA','http://localhost/jael-preciat/');
+	//define('RUTA','http://192.168.0.2/jael-preciat/');
+	define('RUTA','http://yoco.ws/jael-preciat/');
 
 
 	$lottie_js = "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.8/lottie.min.js\" integrity=\"sha256-QWuFU4W0oiKnJa3GVz5Z+pNf91eTYdmHogcIeJpWON0=\" crossorigin=\"anonymous\"></script>";
