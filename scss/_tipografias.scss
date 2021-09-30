@@ -111,6 +111,27 @@ form{
 	}
 }
 
+
+a.ancla{
+	position: relative;
+	&:after{
+		content: "";
+		position: absolute;
+		bottom: -1px;
+		width: 0%;
+		height: 1.5px;
+		background-color: $green;
+		transition: 0.5s ease;
+		left: 0;
+	}
+
+	&:hover{
+		&:after{
+			width: 100%;
+		}
+	}
+}
+
 @font-face{
 	font-family: cour; 
 	src: url("../fonts/own-fonts/COUR.TTF");
@@ -158,4 +179,20 @@ form{
 }
 .montserrat-semibold{
 	font-family: montserrat-semibold !important;
+}
+
+
+
+.animation-text{
+	transform: translateX(0) translateY(100px) translateZ(0) rotate(0deg) scale(1,1);
+	transition: 1000ms cubic-bezier(.215,.61,.355,1);
+	position: relative;
+    z-index: 2;
+    opacity: 0;
+
+	&.active{
+		transition-delay: 250ms;
+    	transform: translateX(0px) translateY(0px) translateZ(0px) rotate(0deg) scale(1, 1);
+		opacity: 1;
+	}
 }

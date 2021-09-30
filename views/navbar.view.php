@@ -1,6 +1,6 @@
 
     
-<img class="logo-header item-nav" src="<?=RUTA?>sprites/logo-footer.svg" alt="">
+<img class="logo-header item-nav scrollTop" src="<?=RUTA?>sprites/logo-footer.svg" alt="" > 
     
 
 
@@ -14,3 +14,4 @@
     </a>
 
 </div>
+

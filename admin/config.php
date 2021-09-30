@@ -1,10 +1,12 @@
 <?php 
 
-
-	//define('RUTA','http://localhost/jael-preciat/');
+	require('vendor/autoload.php');
+	define('RUTA', parse_ini_file('path.ini')['path']);
 	//define('RUTA','http://192.168.0.2/jael-preciat/');
-	define('RUTA','http://yoco.ws/jael-preciat/');
+	//define('RUTA','http://yoco.ws/jael-preciat/');
 
+
+	$client = new GuzzleHttp\Client(['base_uri' => 'https://directus.cliqued.it/jael_preciat/']);
 
 	$lottie_js = "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.8/lottie.min.js\" integrity=\"sha256-QWuFU4W0oiKnJa3GVz5Z+pNf91eTYdmHogcIeJpWON0=\" crossorigin=\"anonymous\"></script>";
 	#JS
