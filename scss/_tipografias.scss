@@ -87,7 +87,13 @@ form{
 				background-color: $green;
 				left: 0;
 				bottom: 0;
-	
+				transition: 0.5s ease;
+			}
+		}
+
+		&:focus,&:hover{
+			&:after{
+				width: 230px;
 			}
 		}
 	}

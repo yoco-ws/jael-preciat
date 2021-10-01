@@ -90,7 +90,7 @@
 				<div class="row">
 					<div class=" box ml-md-auto">
 						<div class="row">
-							<div class="lottie-animation jael-anim " autoplay="false" data-animation-name="Jael" data-loop="0" > </div>
+							<div class="lottie-animation jael-anim " autoplay="false" data-animation-name="Jael" offset="-300" data-loop="0" > </div>
 
 							<div class=" content">
 								<h1 class='montserrat-medium txt-dark-gray pr-2 animation-text' >	<?php echo $page['titulo_ts']  ?></h1>
@@ -135,7 +135,7 @@
 
 							<?php foreach ( $redes as $key => $red ): ?> 
 								<div class="col-md-3 col-7 redes">
-									<div class="lottie-animation  " autoplay="false" data-animation-name="<?php echo $red['animacion'] ?>" data-loop="0" > </div>
+									<div class="lottie-animation  " autoplay="true" offset="0" data-animation-name="<?php echo $red['animacion'] ?>" data-loop="0" > </div>
 
 									<div class="title-box">
 										<h1 class='txt-gray montserrat-medium animation-text'><?php echo $red['titulo'] ?></h1>

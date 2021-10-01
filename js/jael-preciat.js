@@ -62,7 +62,14 @@ if( $('.lottie-animation').length > 0 ){
 
     $(window).on('scroll', function(){
         $('.lottie-animation').each(function(){
-            if( isInViewPort( $(this) ) ){
+
+            $offset = $(this).attr("offset");
+
+            if ($offset == null) {
+                $offset=0;
+            }
+
+            if( isInViewPort( $(this), $offset ) ){
                 $(this).trigger('isVisible');
             }
         });
@@ -70,10 +77,14 @@ if( $('.lottie-animation').length > 0 ){
 
     $(document).ready(function(){
         $('.lottie-animation').each(function(){
-            if ( $(this).attr("autoplay") ) {
-                $(this).trigger('isVisible');
+            
+            $offset = $(this).attr("offset");
+
+            if ($offset == null) {
+                $offset=0;
             }
-            if( isInViewPort( $(this) ) ){
+
+            if( isInViewPort( $(this), $offset ) ){
                 $(this).trigger('isVisible');
             }
         });
