@@ -46,7 +46,7 @@
 
 							<h2 class='txt-green cour-bold paragraph line-height-18 animation-text'><?php echo $page['titulo_formulario']  ?> </h2>
 
-							<form action="<?=RUTA?>helpers/Contact.helper.php" method="POST" id="form-contact" >
+							<form action="<?=RUTA?>helpers/Contact.helper.php" method="POST" id="form-contact" class="d-none" >
 								<div class="form-group line-bottom">
 									<input type="text" name="name" placeholder="Nombre completo">
 								</div>
@@ -60,6 +60,12 @@
 									<button class='button small' type="submit"> <?php echo $page['boton_formulario']  ?> </button>
 								</div>
 							</form>
+
+							<div class="mt-5">
+								<a href="https://wa.me/<?=$contacto['whatsapp']?>" target="_blank" class='button small'>
+									<?php echo $page['boton_formulario']  ?>
+								</a>
+							</div>
 
 						</div>
 					</div>

@@ -19,12 +19,11 @@ $response_correo = $client->request('GET', 'items/contacto', [
 
 $correo = json_decode($response_correo->getBody(), true)['data']['correo']; //Convertir a un arreglo, para uso en PHP
 
-response('success', $correo );
 
 try{
 
 	if( validateContact( $_POST['data'] )  ){
-		//Enviar el correo de confirmación
+		//Enviar el correo de confirmaci贸n
 
 		if( sendContactMail( $_POST['data'], $correo ) ){
 			response('success', 'Gracias, nos pondremos en contacto pronto.' );

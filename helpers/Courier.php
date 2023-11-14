@@ -12,26 +12,19 @@ function sendContactMail($data, $correo){
 	$mail->CharSet = 'UTF-8';
 	$mail->Encoding = "base64";
 	
-	$mail->From = "noreply@yoco.ws";
+	$mail->From = "noreply@jaelpreciat.com";
 	$mail->FromName = "Jael Preciat";
 	$mail->isHTML(true);
 
-	//temporal
-	/*
-	$mail->isSMTP();
-    $mail->Host = 'smtp.mailtrap.io';  //mailtrap SMTP server
-    $mail->SMTPAuth = true;
-    $mail->Username = '8270bb35ef0296';   //username
-    $mail->Password = '160ce573aef9ed';   //password
-    $mail->Port = 2525;                 //smtp port*/
-	//temporal 
+	
 
 	//Producción 
-	$mail->Host = 'mail.yoco.ws';  //mailtrap SMTP server
-	$mail->isHTML(true);
+	$mail->isSMTP();
+	$mail->SMTPAuth = true;
+	$mail->Host = 'mail.jaelpreciat.com';  //mailtrap SMTP server
 	$mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
-	$mail->Username = 'correos@yoco.ws';   //username
-	$mail->Password = 'gsshk3SFCp';   //password
+	$mail->Username = 'noreply@jaelpreciat.com';   //usernameemail
+	$mail->Password = 'TqiUl9kdHyZ3';   //password
 	$mail->Port = 465; 
 	//*/
 
@@ -39,9 +32,9 @@ function sendContactMail($data, $correo){
 	//$mail->addBCC("soporte@yoco.ws");
 	$mail->addBCC($correo);
 	
-	$mail->Subject = "Contacto - Proyecto";
-	$headers =  'From: '."soporte@yoco.ws"."\r\n" .
-		    	'Reply-To: soporte@yoco.ws'.
+	$mail->Subject = "Contacto - Jael Preciat";
+	$headers =  'From: '."noreply@jaelpreciat.com"."\r\n" .
+		    	'Reply-To: noreply@jaelpreciat.com'.
 		    	'X-Mailer: PHP/' . phpversion();
 	$message = "<html>
 				<body leftmargin='0' marginwidth='0' topmargin='0' marginheight='0' offset='0'>
@@ -73,11 +66,9 @@ function sendContactMail($data, $correo){
 																
 																<div style='text-align:left; font-size:15px;'>
 																	
-																	".$data['name']." ".$data['email'].",
-
-																	<br><br>
+																	<br>
 																	<div style='margin-left: 2rem;'>
-																		¡Hola! Agradezco que te hayas comunicado conmigo. Leeré tu mensaje a la brevedad posible para así ponernos en contacto. Jael Preciat
+																		¡Hola ".$data['name']."! Agradezco que te hayas comunicado conmigo. Leeré tu mensaje a la brevedad posible para así ponernos en contacto contigo al correo ".$data['email'].". 
 																	</div>
 
 																	<br><br>
